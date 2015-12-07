@@ -1,0 +1,174 @@
+div.maintext{
+  margin-top:30px;
+}
+
+div.left{
+  width:40em;
+}
+  
+div.maintitle {
+	padding-top:30px;
+  margin-left:40px;
+  font-size: 16pt;
+}
+  
+div.subtitle {
+  margin-top:15px;
+  margin-left:40px;
+	font-size: 12pt;
+	color: #7F7F7F;
+}
+
+#page h1 {
+  margin-left:40px;
+  margin-bottom:30px;
+	font-size: 1.6em;
+	font-weight: normal;
+  padding: 0;
+}
+
+#publications h2 {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-left:40px;
+  padding-top: 20px;
+}
+
+div.new{
+  position:absolute;
+  left: 60px;
+  float:left;
+  padding-top:5px;
+  }
+
+div.news{
+  margin-left:40px;
+}
+
+p {
+	margin-top: 0em;
+  margin-left:40px;
+	margin-bottom: 1.6em; 
+  }
+
+table {
+	margin: 0em;
+	padding: 0em;
+	border: 0px;
+	border-style: none;
+	border-spacing: 0px;
+  width:50em;
+  }
+
+div.publications{
+  padding-left:10em;
+  }
+
+td.main {
+  width:42em;
+  }
+
+td.right {
+  vertical-align:top;
+  width:8em;
+  }
+
+td {
+	margin: 0em;
+	padding: 0em;
+	border: 0px;
+	border-style: none;
+	border-spacing: 0px;
+  }
+
+p.right {
+	position: absolute;
+	right: 20px;
+	top: 375px;
+	text-align: right;
+	}
+
+p.project {
+  width: 40em;
+  margin-left:100px;
+}
+
+/* Menus */
+#submenu {
+  font-size: 9pt;
+	margin: 0;
+	padding-left:30px;
+	list-style: none;
+	background: #fff;
+	overflow: hidden;
+  border-bottom-color:#CCC;
+  border-bottom-style:dotted;
+  border-bottom-width:1px
+	}
+#submenu li {
+	display: block;
+	float: left;
+	}
+#submenu li a {
+	color: #666;
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	-webkit-transition: color .2s ease-in;
+	}
+#submenu li a:focus {
+	color: #fca311;
+	}
+
+#submenu li a:hover {
+	color: #fca311;
+	}
+
+/* Fonts */
+span.small {
+	font-size: 8pt; }
+
+span.medium {
+	font-size: 10pt; }
+
+span.italic {
+    font-style:italic;
+}
+
+span.bold {
+    font-weight:600;    
+}
+  
+span.gray {
+	color: #7F7F7F }
+  
+span.white {
+	color: #FFFFFF }
+  
+span.orange {
+	color: #FF6600 }
+
+.label-warning {
+    background-color: #f89406;
+}
+
+.label {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11px;
+    line-height: 14px;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+/* Links */
+
+a { text-decoration: none }
+a:link { color: #333; }
+a:visited { color: #333; }
+a:active { color: red; }
+a.gray { color: #7F7F7F; }
+a:hover { color: #FF6600; }
