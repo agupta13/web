@@ -51,14 +51,14 @@ p {
 	margin-bottom: 1.6em; 
   }
 
-table {
+/*table {
 	margin: 0em;
 	padding: 0em;
 	border: 0px;
 	border-style: none;
 	border-spacing: 0px;
   width:50em;
-  }
+  }*/
 
 div.publications{
   padding-left:10em;
@@ -73,13 +73,13 @@ td.right {
   width:8em;
   }
 
-td {
+/*td {
 	margin: 0em;
 	padding: 0em;
 	border: 0px;
 	border-style: none;
 	border-spacing: 0px;
-  }
+  }*/
 
 p.right {
 	position: absolute;
