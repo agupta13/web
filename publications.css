@@ -5,13 +5,13 @@ div.maintext{
 div.left{
   width:40em;
 }
-  
+
 div.maintitle {
 	padding-top:30px;
   margin-left:40px;
   font-size: 16pt;
 }
-  
+
 div.subtitle {
   margin-top:15px;
   margin-left:40px;
@@ -48,7 +48,7 @@ div.news{
 p {
 	margin-top: 0em;
   margin-left:40px;
-	margin-bottom: 1.6em; 
+	margin-bottom: 1.6em;
   }
 
 /*table {
@@ -136,15 +136,15 @@ span.italic {
 }
 
 span.bold {
-    font-weight:600;    
+    font-weight:600;
 }
-  
+
 span.gray {
 	color: #7F7F7F }
-  
+
 span.white {
 	color: #FFFFFF }
-  
+
 span.orange {
 	color: #FF6600 }
 
@@ -170,5 +170,5 @@ a { text-decoration: none }
 a:link { color: #333; }
 a:visited { color: #333; }
 a:active { color: red; }
-a.gray { color: #7F7F7F; }
+/*a.gray { color: #7F7F7F; }*/
 a:hover { color: #FF6600; }

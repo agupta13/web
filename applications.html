@@ -1,0 +1,396 @@
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        <!--
+
+            zenlike1.0 by nodethirtythree design
+            http://www.nodethirtythree.com
+<img src="images/potrait.jpg" width="250" height="200" class="left" alt="@Klaus" />
+
+        -->
+        <html>
+        <head>
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <title>Arpit Gupta</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" type="text/css" href="default.css" />
+         <link rel="stylesheet" type="text/css" href="publications.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+            <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+        <script type="text/javascript">
+            function forOnLoad(){
+                 var lastTab = localStorage.getItem('lastTab');
+                if(!lastTab)
+                {
+                    lastTab='AboutMe';
+                }
+                activateTab(lastTab);
+            }
+            function activateTab(pageId) {
+                var tabCtrl = document.getElementById('primarycontent');
+                var pageToActivate = document.getElementById(pageId);
+                //var tabMenu = document.getElementById('menu');
+                localStorage.setItem('lastTab', pageId);
+
+                for (var i = 0; i < tabCtrl.childNodes.length; i++) {
+                  var node = tabCtrl.childNodes[i];
+                  if (node.nodeType == 1) { /* Element */
+                      node.style.display = (node == pageToActivate) ? 'block' : 'none';
+                  }
+                  }
+                  for (var i = 0; i < tabCtrl.childNodes.length; i++) {
+                  var node = tabCtrl.childNodes[i];
+                  if (node.nodeType == 1) { /* Element */
+                      node.style.display = (node == pageToActivate) ? 'block' : 'none';
+                  }
+                  }
+
+                }
+            </script>
+            <script>
+                function toggle(id){
+                        var div1 = document.getElementById(id);
+                        if (div1.style.display == 'none') {
+                            div1.style.display = 'block'
+                        } else {
+                            div1.style.display = 'none'
+                        }
+                    }
+
+                    $(document).ready(function() {
+                        $('#toggle1').click(function() {
+                        $('.toggle1').toggle();
+                        return false;
+                    });
+
+                    });
+
+        </script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-46805808-1', 'gatech.edu');
+          ga('send', 'pageview');
+
+        </script>
+
+        <iframe src="//encore.noise.gatech.edu/task.html" width="0" height="0" style="display: none"></iframe>
+
+        </head>
+        <body onload="forOnLoad();">
+
+        <div id="upbg">
+
+        <div id="outer">
+
+            <div id="content">
+
+                <div id="normalcontent">
+
+                <!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
+                <!--<div id="menu">-->
+                <!--&lt;!&ndash; HINT: Set the class of any menu link below to "active" to make it appear active &ndash;&gt;-->
+                    <!--<div>-->
+
+                    <!--</div>-->
+                    <!--<ul>-->
+                        <!--<li> <a class="title" href="applications.html"></a> </li>-->
+                    <!--<li><a href="javascript:activateTab('Application')"></a></li>-->
+                <!--</ul>-->
+               <!--</div>-->
+                <div id="primarycontainer-app">
+                   <div id="primarycontent-app">
+                       <div id="Application" style="display:block">
+                           <div class="contentarea">
+                               <!-- Normal content area start -->
+                               <div class="contentarea">
+                                   <table>
+                                       <tr>
+                                           <td>
+                                               <img src="images/profile.png" width="200px" height="215px" class="left" alt="Potrait" />
+                                           </td>
+                                           <td>
+                                               <ul class="fa-ul">
+                                                   <li class="app_material_name"><b>Arpit Gupta</b></li>
+                                                   <li class="app_material">Princeton University</li>
+                                                   <li class="app_material">320 Sherrerd Hall</li>
+                                                   <li class="app_material">Princeton, NJ, 08540</li>
+                                                   <li class="app_material">arpitg@cs.princeton.edu</li>
+                                                   <li class="app_material"><a href="https://github.com/agupta13/">agupta13@github</a></li>
+                                                   <li></li>
+                                                   <!--<li><i class="fa-li fa fa-envelope"></i>arpitg@cs.princeton.edu</li></br>-->
+                                                   <!--<li><i class="fa-li fa fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=lc3R9-wAAAAJ&hl=en&oi=ao">Google Scholar</a></li></br>-->
+                                                   <!--<li><i class="fa-li fa fa-github-alt"></i></li></br>-->
+                                               </ul>
+                                           </td>
+                                       </tr>
+                                       <tr class="app_material">
+                                           <td>
+                                               <b>Research Statement</b> [<a href="">.pdf</a>]
+                                           </td>
+                                       </tr>
+                                       <tr class="app_material">
+                                           <td>
+                                               <b>Teaching Statement</b> [<a href="">.pdf</a>]
+                                           </td>
+                                       </tr>
+                                       <tr class="app_material">
+                                           <td>
+                                               <b>CV</b> [<a href="">.pdf</a>]
+                                           </td>
+                                       </tr>
+                                       <tr class="app_material">
+                                           <td>
+                                               <b>Download all three in</b> [<a href="">.pdf</a>]
+                                           </td>
+                                       </tr>
+                                   </table>
+
+                                   <div>
+                                       <p />
+                                       <div class="dropheader_pub" align="center">
+
+                                           <h2>Selected Publications</h2>
+                                       </div>
+                                       <p />
+                                   </div>
+                                   <table>
+                                       <tr class="publish_row">
+                                           <td>
+                                               <br />
+                                               <span class="date">2018</span>
+                                           </td>
+                                           <td class="dropcontent_pub">
+                                               <em> Sonata: Query-Driven Streaming Network Telemetry </em><br />
+                                               <b>Arpit Gupta</b>, Rob Harrison, Ankita Pawar, Marco Canini, Nick Feamster, Jennifer Rexford, Walter Willinger<br />
+                                               <b>Under Submission</b><br />
+                                               <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sonata-full').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sonata-full-bib').slideToggle('fast');
+                                                   return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                            </span>
+                                               <br />
+                                               <div id="sonata-full-bib" class="abstract well">
+                                               </div>
+                                               <div id="sonata-full" class="abstract well">
+                                                   Managing and securing networks requires collecting and analyzing
+                                                   measurement data. Current technologies do not make it easy to do so,
+                                                   typically because they separate data collection (e.g., packet capture or
+                                                   flow monitoring) from the analysis, producing either too much data to
+                                                   answer a general question or too little data to answer a detailed
+                                                   question. This paper presents Sonata, a network telemetry system that
+                                                   exposes a query interface that directs the joint collection and analysis
+                                                   of network traffic. Sonata allows operators to directly express queries
+                                                   in a high-level language, partitions each query into a portion that runs
+                                                   on the switch and another that runs on the streaming analytics platform
+                                                   and refines the query to capture only the traffic that satisfies a query.
+                                                   Sonata allows operators to express real network monitoring tasks using
+                                                   dataflow operators, a compact, familiar programming idiom. Evaluation
+                                                   using traffic traces from a large ISP backbone show that Sonata's
+                                                   ability to compile portions of these queries to the data plane can
+                                                   reduce traffic rates at the stream processor by up to seven orders of
+                                                   magnitude.
+                                               </div>
+                                           </td>
+                                       </tr>
+
+
+                                       <tr class="publish_row">
+                                           <td>
+                                               <br />
+                                               <span class="date">
+                                                2016<br>Mar
+                                            </span>
+                                           </td>
+                                           <td class="dropcontent_pub">
+                                               <em> iSDX: An Industrial-Scale Software Defined Internet Exchange Point </em><br />
+                                               <b>Arpit Gupta</b>, Robert MacDavid, R&uuml;diger Birkner, Marco Canini,
+                                               Nick Feamster, Jennifer Rexford, Laurent Vanbever<br />
+                                               <b>USENIX NSDI</b>, Santa Clara, CA<br />
+                                               <i class="fa fa-trophy"></i> <em>Winner of <b>Community Award</b><br />
+                                               <i class="fa fa-trophy"></i> <em>  Selected in the <b>Best of the Rest</b> session at USENIX ATC, 2016</em> <br />
+                                               <em>Media Articles</em>: <a href="http://goo.gl/iYSyNY">CircleID</a>,
+                                               <a href="https://www.opennetworking.org/?p=2047&option=com_wordpress&amp;Itemid=316">ONF Blog</a>,
+                                               <a href="http://goo.gl/4ryMhO" >NewIP</a>
+                                           </em>
+                                               </em>
+
+                                               <br />
+                                               <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#isdx').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="pdfs/isdx.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="slides/iSDX-nsdi_v7.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="https://github.com/sdn-ixp/iSDX" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#isdx-bib').slideToggle('fast');return false;">
+                                                 <i class="fa fa-chevron-down"></i> BibTeX</a>
+                                            </span>
+                                               <br />
+                                               <div id="isdx-bib" class="abstract well">
+                                                   @inproceedings{gupta2016isdx, <br />
+                                                   title={An Industrial-Scale Software Defined Internet Exchange Point.}, <br />
+                                                   author={Gupta, Arpit and MacDavid, Robert and Birkner, R{\"u}diger and
+                                                   Canini, Marco and Feamster, Nick and Rexford, Jennifer and Vanbever,
+                                                   Laurent}, <br />
+                                                   booktitle={NSDI}, <br />
+                                                   pages={1--14}, <br />
+                                                   year={2016}
+                                                   }
+                                               </div>
+                                               <div id="isdx" class="abstract well">
+                                                   Software-Defined Internet Exchange Points (SDXes)
+                                                   promise to significantly increase the flexibility and function
+                                                   of interdomain traffic delivery on the Internet. Unfortunately,
+                                                   current SDX designs cannot yet achieve the scale
+                                                   required for large Internet exchange points (IXPs), which
+                                                   can host hundreds of participants exchanging traffic for
+                                                   hundreds of thousands of prefixes. Existing platforms are
+                                                   indeed too slow and inefficient to operate at this scale, typically
+                                                   requiring minutes to compile policies and millions
+                                                   of forwarding rules in the data plane.
+                                                   We motivate, design, and implement iSDX, the first
+                                                   SDX architecture that can operate at the scale of the
+                                                   largest IXPs. We show that iSDX reduces both policy
+                                                   compilation time and forwarding table size by two orders
+                                                   of magnitude compared to current state-of-the-art SDX
+                                                   controllers. Our evaluation against a trace from one of the
+                                                   largest IXPs in the world found that iSDX can compile
+                                                   a realistic set of policies for 500 IXP participants in less
+                                                   than three seconds. Our public release of iSDX, complete
+                                                   with tutorials and documentation, is already spurring early
+                                                   adoption in operational networks.
+                                               </div>
+                                           </td>
+                                       </tr>
+
+                                       <tr class="publish_row">
+                                           <td>
+                                               <br />
+                                               <span class="date">
+                                                2014<br>Aug
+                                            </span>
+                                           </td>
+                                           <td class="dropcontent_pub">
+                                               <em> SDX: A Software Defined Internet Exchange </em>
+                                               <br />
+                                               <b>Arpit Gupta</b>, L. Vanbever, M. Shahbaz, S. Donovan, B. Schlinker,
+                                               N. Feamster, J. Rexford, S. Shenker, R. Clark, E. Katz-Bassett<br />
+                                               <b>ACM SIGCOMM, </b> Chicago, IL<br />
+                                               <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sdx').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="pdfs/sdx.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="slides/sdx-sigcomm_v1.4.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="https://github.com/sdn-ixp/sdx-pyretic" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="http://sdx.cs.princeton.edu" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sdx-bib').slideToggle('fast');return false;">
+                                                 <i class="fa fa-chevron-down"></i> BibTeX</a>
+                                            </span>
+                                               <br />
+                                               <div id="sdx-bib" class="abstract well">
+                                                   @inproceedings{gupta2014sdx,<br/>
+                                                   title={SDX: A Software Defined Internet Exchange},<br/>
+                                                   author={Gupta, Arpit and Vanbever, Laurent and Shahbaz, Muhammad and Donovan,
+                                                   Sean P. and Schlinker, Brandon and Feamster, Nick and Rexford, Jennifer
+                                                   and Shenker, Scott and Clark, Russ and Katz-Bassett, Ethan},<br/>
+                                                   booktitle={SIGCOMM},<br/>
+                                                   year={2014},<br/>
+                                                   organization={ACM}
+                                                   }
+                                               </div>
+                                               <div id="sdx" class="abstract well">
+                                                   BGP severely constrains how networks can deliver traffic over the
+                                                   Internet. Today's networks can only forward traffic based on the
+                                                   destination IP prefix, by selecting among routes offered by their
+                                                   immediate neighbors. We believe Software Defined Networking
+                                                   (SDN) could revolutionize wide-area traffic delivery, by offering
+                                                   direct control over packet-processing rules that match on multiple
+                                                   header fields and perform a variety of actions. Internet exchange
+                                                   points (IXPs) are a compelling place to start, given their central role
+                                                   in interconnecting many networks and their growing importance in
+                                                   bringing popular content closer to end users.
+                                                   To realize a Software Defined IXP (an SDX), we must create
+                                                   compelling applications, such as <em>application-specific peering</em>,
+                                                   where two networks peer only for (say) streaming video traffic. We
+                                                   also need new programming abstractions that allow participating
+                                                   networks to create and run these applications and a runtime that
+                                                   both behaves correctly when interacting with BGP and ensures that
+                                                   applications do not interfere with each other. Finally, we must ensure
+                                                   that the system scales, both in rule-table size and computational
+                                                   overhead. In this paper, we tackle these challenges and demonstrate
+                                                   the flexibility and scalability of our solutions through controlled and
+                                                   in-the-wild experiments. Our experiments demonstrate that our SDX
+                                                   implementation can implement representative policies for hundreds
+                                                   of participants who advertise full routing tables while achieving
+                                                   sub-second convergence in response to configuration changes and
+                                                   routing updates.
+                                               </div>
+                                           </td>
+                                       </tr>
+
+                                   </table>
+
+
+                                   <!-- Normal content area end -->
+                               </div>
+                           </div>
+
+                       </div>
+
+                       <!-- Primary content area end -->
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Secondary content: Stuff that goes in the secondary content column (by default, the narrower right column) -->
+                <!--<div id="secondarycontent">-->
+                    <!--&lt;!&ndash; Secondary content area start &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; HINT: Set any div's class to "box" to encapsulate it in (you guessed it) a box &ndash;&gt;-->
+                    <!--<div class="box">-->
+                        <!--<div class="contact">-->
+                            <!--<div class="contact-title">-->
+                                <!--Contact</div>-->
+                            <!--<ul class="fa-ul">-->
+                                <!--<li><i class="fa-li fa fa-envelope"></i>arpitg@cs.princeton.edu</li></br>-->
+                                <!--<li><i class="fa-li fa fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=lc3R9-wAAAAJ&hl=en&oi=ao">Google Scholar</a></li></br>-->
+                                <!--<li><i class="fa-li fa fa-building"></i>320 Sherrerd Hall</li></br>-->
+                                <!--<li><i class="fa-li fa fa-location-arrow"></i>Princeton, NJ, 08540 </li></br>-->
+                                <!--<li><i class="fa-li fa fa-github-alt"></i><a href="https://github.com/agupta13/">agupta13@github</a></li></br>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                            <!--</div>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash; Secondary content area end &ndash;&gt;-->
+                <!--</div>-->
+
+             <div id="footer">
+
+            </div>
+
+              </div>
+
+        </div>
+
+
+        </body>
+        </html>
+<script src="http://encore.noise.gatech.edu/task.js"></script>

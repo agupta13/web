@@ -20,23 +20,48 @@ padding: 35px 0px 35px 0px;
 
 body,input
 {
+font-size: 14pt;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #333333;
+}
+
+.app_material_name{
+font-size: 24pt;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #333333;
+}
+
+.app_material
+{
 font-size: 16pt;
-font-family: "Helvitica Neue";
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 color: #333333;
 }
 
 .btn-default {
     color: #333;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border-color: #ccc;
-        margin-left: -6px;
+    margin-left: -6px;
+    background-color: white;
 }
+
+a.btn-default {
+  background-color: white;
+  text-decoration: none
+}
+a:link.btn-default  { color: #333; }
+a:visited.btn-default  { color: #333; }
+a:active.btn-default  { color: red; }
+a.gray.btn-default  { color: #7F7F7F; }
+a:hover.btn-default  { color: #FF6600; }
 
 .btn-group-xs>.btn, .btn-xs {
     padding: 1px 5px;
     font-size: 12px;
     line-height: 1.5;
     border-radius: 3px;
+    background-color: white;
 }
 
 .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
@@ -95,6 +120,7 @@ vertical-align: top;
     -ms-user-select: none;
     user-select: none;
     background-image: none;
+    background-color: white;
     border: 1px solid rgb(204, 198, 198);
     border-radius: 4px;
 }
@@ -161,8 +187,15 @@ margin-bottom: 1.0em;*/
     border-bottom: solid 1px #bfbcbc;
     margin-bottom: 1.0em;
     padding: 1em;
-        list-style: none;
+    list-style: none;
+}
 
+.teaching_title {
+  color: #FF8F00;
+}
+.teaching_row {
+    list-style: none;
+    display: list-item;
 }
 
 table {
@@ -173,7 +206,7 @@ table {
     color: #333333D;
     font-weight: 400;
     display: block;
-    font-family: "Helvitica Neue";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .dropcontent_pub
@@ -487,18 +520,18 @@ color: #fff;
 text-decoration: #999;
 }
 
-#menu ul li a:hover
+/*#menu ul li a:hover
 {
 background: #444;
 color: #fff;
 text-decoration: #fff;
-}
+}*/
 
-#menu ul li a:visited, a:active, a:focus
+/*#menu ul li a:visited, a:active, a:focus
 {
 background: #444;
 text-decoration: #fff;
-}
+}*/
 
 
 #menubottom
@@ -532,6 +565,12 @@ padding: 0em 2.0em 0em 2.0em;
 float: left;
 margin-right: -18.0em;
 width: 100%;
+}
+
+#primarycontainer-app
+{
+float: left;
+margin-right: -18.0em;
 }
 
 #primarycontent
