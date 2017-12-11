@@ -19,7 +19,7 @@
 
         <script type="text/javascript">
             function forOnLoad(){
-                 var lastTab = localStorage.getItem('lastTab');
+                 var lastTab = sessionStorage['lastTab'];
                 if(!lastTab)
                 {
                     lastTab='AboutMe';
@@ -30,8 +30,7 @@
                 var tabCtrl = document.getElementById('primarycontent');
                 var pageToActivate = document.getElementById(pageId);
                 //var tabMenu = document.getElementById('menu');
-                localStorage.setItem('lastTab', pageId);
-
+                sessionStorage['lastTab'] = pageId;
                 for (var i = 0; i < tabCtrl.childNodes.length; i++) {
                   var node = tabCtrl.childNodes[i];
                   if (node.nodeType == 1) { /* Element */
@@ -86,31 +85,9 @@
         <div id="upbg">
 
         <div id="outer">
-
-            <!--<div id="header">-->
-                <!--<div id="headercontent">-->
-
-                    <!--<h2 align="center">"The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn."</br>-->
-                        <!--&#45;&#45;Alvin Toffler-->
-<!--&lt;!&ndash;-->
-                        <!--"Genius is one percent inspiration and ninety-nine percent perspiration." <br/>-->
-                        <!--&#45;&#45;Thomas Edison-->
-<!--&ndash;&gt;-->
-                    <!--</h2>-->
-                <!--</div>-->
-            <!--</div>-->
-
-<!--            <div id="headerpic"> <img src="images/india.gif" width="100%" height="200px" class="left" alt="Indian Tricolor" /></div>-->
-
             <div id="content">
-
-                <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
-
                 <div id="normalcontent">
-
-                <!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
                 <div id="menu">
-                <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
                     <div>
 
                     </div>
@@ -151,13 +128,9 @@
                                                    href="javascript:void(0);" onclick="$('#sonata-full').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
-                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#sonata-full-bib').slideToggle('fast');
-                                                   return false;">
-                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                             </span>
                                             <br />
                                             <div id="sonata-full-bib" class="abstract well">
@@ -202,8 +175,9 @@
                                                 href="javascript:void(0);" onclick="$('#concise-sosr').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/pathsets.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/pathsets-sosr17.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="slides/pathsets-sosr17.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/robertmacdavid/PathSets-private" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="http://sdx.cs.princeton.edu" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                 href="javascript:void(0);" onclick="$('#concise-sosr-bib').slideToggle('fast');return false;">
                                                 <i class="fa fa-chevron-down"></i> BibTeX</a>
@@ -274,9 +248,9 @@
                                                 href="javascript:void(0);" onclick="$('#isdx').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/isdx.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/iSDX-nsdi_v7.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="slides/iSDX-nsdi_v7.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/sdn-ixp/iSDX" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i>Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                 href="javascript:void(0);" onclick="$('#isdx-bib').slideToggle('fast');return false;">
                                                  <i class="fa fa-chevron-down"></i> BibTeX</a>
@@ -336,9 +310,9 @@
                                                 onclick="$('#kinetic').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/kinetic.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/frenetic-lang/pyretic/tree/kinetic" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://kinetic.noise.gatech.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="http://kinetic.noise.gatech.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                 href="javascript:void(0);" onclick="$('#kinetic-bib').slideToggle('fast');return false;">
                                                  <i class="fa fa-chevron-down"></i> BibTeX</a>
@@ -395,9 +369,9 @@
                                                 href="javascript:void(0);" onclick="$('#sdx').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/sdx.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/sdx-sigcomm_v1.4.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="slides/sdx-sigcomm_v1.4.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/sdn-ixp/sdx-pyretic" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://sdx.cs.princeton.edu" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="http://sdx.cs.princeton.edu" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                 href="javascript:void(0);" onclick="$('#sdx-bib').slideToggle('fast');return false;">
                                                  <i class="fa fa-chevron-down"></i> BibTeX</a>
@@ -467,15 +441,22 @@
                                                 <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#wifox').slideToggle('fast');return false;">
                                                     <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/wifox.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                 href="javascript:void(0);" onclick="$('#wifox-bib').slideToggle('fast');return false;">
                                                  <i class="fa fa-chevron-down"></i> BibTeX</a>
                                             </span>
                                             <br />
                                             <div id="wifox-bib" class="abstract well">
+                                                @inproceedings{gupta2012wifox, <br/>
+                                                title={WiFox: Scaling WiFi Performance for Large Audience Environments},<br/>
+                                                author={Gupta, Arpit and Min, Jeongki and Rhee, Injong},<br/>
+                                                booktitle={Proceedings of the Eigth COnference on emerging Networking EXperiments and Technologies, CoNEXT},<br/>
+                                                volume={12},<br/>
+                                                year={2012}<br/>
+                                                }
                                             </div>
                                             <div id="wifox" class="abstract well">
                                                 Distributed applications and web services, such as online stores or
@@ -526,7 +507,7 @@
                                                 <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                    href="javascript:void(0);" onclick="$('#sosr-full').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i>Web</a>
                                             </span>
                                        <br />
 
@@ -562,7 +543,7 @@
                                                 <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                    href="javascript:void(0);" onclick="$('#ccr-abstract').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                             </span>
                                        <br />
 
@@ -612,12 +593,12 @@
                                                    href="javascript:void(0);" onclick="$('#sdx-correctness-sosr').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/sidr.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/nsg-ethz/SIDR" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                    href="javascript:void(0);" onclick="$('#sdx-correctness-sosr-bib').slideToggle('fast');return false;">
-                                                <i class="fa fa-quote-left"></i> BibTex</a>
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
                                             </span>
                                        <br />
                                        <div id="sdx-correctness-sosr-bib" class="abstract well">
@@ -678,9 +659,9 @@
                                                    href="javascript:void(0);" onclick="$('#sonata-hotnets16').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/sonata-hotnets16.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                    href="javascript:void(0);" onclick="$('#sonata-hotnets16-bib').slideToggle('fast');
                                                    return false;">
@@ -740,12 +721,12 @@
                                                    href="javascript:void(0);" onclick="$('#flanc').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/flanc.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/flanc-sosr_v4.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="slides/flanc-sosr_v4.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                    href="javascript:void(0);" onclick="$('#flanc-bib').slideToggle('fast');return false;">
-                                                <i class="fa fa-quote-left"></i> BibTex</a>
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
                                             </span>
                                        <br />
                                        <div id="flanc-bib" class="abstract well">
@@ -792,11 +773,11 @@
                                                 <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#african_interconns').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/african_interconns.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/Africa-PAM14.pdf" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
+                                                <a href="slides/Africa-PAM14.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/agupta13/Peering-Africa" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                    href="javascript:void(0);" onclick="$('#african_interconns-bib').slideToggle('fast');return false;">
-                                                <i class="fa fa-quote-left"></i> BibTex</a>
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
                                             </span>
                                        <br />
                                        <div id="african_interconns-bib" class="abstract well">
@@ -821,14 +802,6 @@
                                    </td>
                                </tr>
                            </table>
-
-
-
-                            <div class="divider2"></div>
-
-
-
-
                             <!-- Primary content area end -->
                         </div>
                        <div id="AboutMe" style="display:block">
@@ -839,8 +812,12 @@
                                <div class="contentarea">
                                    <p> I am a fifth year Ph.D. student in Computer Science at Princeton University.
                                        At Princeton, I work with
-                                       <a href="https://www.cs.princeton.edu/~feamster/" style="color:#0099FF" >Nick Feamster</a> and
-                                       <a href="https://www.cs.princeton.edu/~jrex/" style="color:#0099FF" >Jennifer Rexford</a>.
+                                       <a href="https://www.cs.princeton.edu/~feamster/" ><b>Nick Feamster</b></a> and
+                                       <a href="https://www.cs.princeton.edu/~jrex/" ><b>Jennifer Rexford</b></a>.
+
+                                   </p>
+
+                                   <p>
                                        As a <b>systems</b> researcher, I design algorithms that address the problems that
                                        lie at the intersection of <b>networking</b>, <b>security</b> and <b>data-science</b>
                                        areas to build and deploy easy-to-use and scalable real-world systems.
@@ -850,12 +827,13 @@
                                        <b> How can networks run themselves?</b> My thesis research tries to answer this
                                        question. More specifically, it focuses on building two components that complete
                                        the <em>control-loop</em>, critical for such self-driving networks:
-                                   <ul>
-                                           <li><b>Telemetry</b> (with <a href="http://sonata.cs.princeton.edu" style="color:#0099FF">Sonata</a>),
+
+                                   <ul style="margin-left: 100px;">
+                                           <li><b>Telemetry</b> (with <a href="http://sonata.cs.princeton.edu" ><b>Sonata</b> </a>),
                                                i.e., collecting and analysing the raw network data to infer various
                                                network activities of interest, such as DDoS attacks, or link failures,
                                                etc. in real-time; and</li>
-                                           <li><b>Control</b> (with <a href="http://sdx.cs.princeton.edu" style="color:#0099FF">SDX</a>),
+                                           <li><b>Control</b> (with <a href="http://sdx.cs.princeton.edu" > <b>SDX</b> </a>),
                                                i.e., applying the reactive fine-grained
                                                actions without disrupting network's default behavior, especially in multi-domain
                                                settings such as Internet, or multi-tenant data center networks.</li>
@@ -915,63 +893,94 @@
                             <!-- Primary content area end -->
                         </div>
 
-                        <div id="teaching">
+                        <div id="teaching"  style="display:none">
                             <!-- Primary content area start -->
                             <div class="post">
-                              <p><strong>Past Courses</strong> that I have been involved with:</p>
-                              <ul>
-                              <li class="teaching_row"><p><a href="https://courses.cs.washington.edu/courses/cse451/"> UW CSE 451 - Introduction to Operating Systems</a></p></li>
-                              <li class="teaching_row"><p><a href="https://courses.cs.washington.edu/courses/cse351/">UW CSE 351 - The Hardware/Software Interface</a></p></li>
-                              <li class="teaching_row"><p><a href="http://pdos.csail.mit.edu/6.828/">MIT 6.828 - Operating Systems Engineering</a></p></li>
-                              <li class="teaching_row"><p><a href="http://web.mit.edu/6.111/www/">MIT 6.111 - Introductory Digital Systems Laboratory</a></p></li>
-                              <li class="teaching_row"><p><a href="http://6004.mit.edu/">MIT 6.004 - Computation Structures</a></p></li>
-                              <li class="teaching_row"><p><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/index.htm">MIT 6.00 - Introduction to Computer Science and Programming</a></p></li>
-                              </ul>
+                              <p>I have contributed to the following courses:</p>
+                                <ul style="list-style-type:circle; margin-left:100px">
+                                    <li class="teaching_row"><a href="https://github.com/Sonata-Princeton/SONATA-DEV/tree/tutorial/sonata/tutorials">Princeton COS 561 - Advanced Computer Networks</a>, Fall 2017</li>
+                                    <li class="teaching_row"><a href="https://registrar.princeton.edu/course-offerings/course_details.xml?courseid=002132&term=1164">Princeton COS 598E - Securing Cyberspace with Big Data</a>, Spring 2016</li>
+                                    <li class="teaching_row"><a href="https://www.cs.princeton.edu/courses/archive/spring16/cos461/">Princeton COS 461 - Computer Networks</a>, Spring 2016</li>
+                                    <li class="teaching_row"><a href="http://noise.gatech.edu/classes/cs8803sdn/fall2014/">Georgia Tech CS 4270 - Software Defined Networking Seminar</a>, Fall 2014</li>
+                                    <li class="teaching_row"><a href="https://github.com/PrincetonUniversity/Coursera-SDN">Coursera SDN- Software Defined Networking</a>, Summer 2014 & 2015</li>
+                                    <li class="teaching_row"><a href="https://courses.ncsu.edu/csc236/">NCSU CSC 236 - Computer Organization and Assembly Language</a>, Spring 2013</li>
+                                    <li class="teaching_row"><a href="https://courses.ncsu.edu/csc573/">NCSU CSC 573 - Internet Protocol</a>, Fall 2012</li>
+
+
+                                </ul>
                             </div>
 
 
                             <div class="divider2"></div>
 
              </div>
-                       <div id="research">
+                       <div id="research"  style="display:none">
                            <!-- Primary content area start -->
                            <div class="post">
 
-                               <h2 align="left">Research Projects</h2>
+                               <h2 align="left">Self-Driving Networks</h2>
 
                                <ul>
 
                                <li class="publish_row">
 
-
+                                   <h4 align="left">Telemetry with Sonata</h4>
                                    <span class="links btn-group pull-right">
-                                    <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                    <a href="" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
-                                    <a href="" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                    <a href="" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                    <a href="https://github.com/Sonata-Princeton" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                    <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                    <a href="http://sonata.cs.princeton.edu/publications.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> Publications</a>
                                     </span>
-                                   <h4 align="left">SDX</h4><br />
-                                   I am a fifth year Ph.D. student in Computer Science at Princeton University. At Princeton, I work with Nick Feamster and Jennifer Rexford, focusing on the intersection of Software-Defined Networks, Security, and Big Data Analytics.
-                                </li>
+                                   <br />
+                                   <p>
+                                   For networks to run by themselves, they need to monitor a wide range of network
+                                   activities, i.e., perform network telemetry. The network telemetry involves
+                                   extracting various features from the traffic data and combining these features to
+                                   infer activities of interests in real-time. Most existing real-time telemetry
+                                   solutions are either not expressive, i.e., they support an insufficient set of
+                                   telemetry tasks, or they are not scalable, i.e., they fail to scale as the traffic
+                                   volume intensifies and the number of telemetry tasks increases. As self-driven
+                                   networks require running multiple expressive telemetry queries over high-volume
+                                   networks, my research focuses on building real-time distributed network telemetry
+                                   system that is both expressive and scalable.
+                                   </p>
+
+                               </li>
 
                                <li class="publish_row">
 
-
+                                   <h4 align="left">Control with SDX</h4>
                                    <span class="links btn-group pull-right">
-                                    <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                    <a href="" class="btn btn-default btn-xs"><i class="fa fa-film"></i> Talk</a>
-                                    <a href="" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                    <a href="" class="btn btn-default btn-xs"><i class="fa fa-plus"></i> More</a>
+                                    <a href="https://github.com/sdn-ixp" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                    <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                    <a href="http://sdx.cs.princeton.edu/publications.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> Publications</a>
                                     </span>
-                                       <h4 align="left">SDX</h4><br />
-                                       I am a fifth year Ph.D. student in Computer Science at Princeton University.
-                                       At Princeton, I work with Nick Feamster and Jennifer Rexford, focusing on the
-                                       intersection of Software-Defined Networks, Security, and Big Data Analytics.
+                                   <br />
+                                   <p>
+                                   After transforming the traffic data into control actions, a self-driving network
+                                   needs to apply these fine-grained control actions in the data plane. For example,
+                                   on detecting the presence of DNS reflection attacks, the required action is to
+                                   rate-limit the DNS response messages sent to the victim host/network. However,
+                                   applying such fine-grained forwarding actions not only requires network-wide
+                                   deployment of programmable data-plane targets, but also requires guarantees about
+                                   the safe inter-operation with existing protocols in settings where multiple
+                                   independent networks interact with each other.
+                                   </p>
+                                   <p>
+                                   Among various types of multi-domain networks, such as inter-domain networks
+                                   (Internet), multi-tenant data-center networks, etc.; my research focuses on applying
+                                   control actions to the inter-domain networks settings where networks use border
+                                   gateway protocol (BGP) to exchange traffic with each other. In my study, I
+                                   demonstrate that BGP is not suited for applying fine-grained control actions.
+                                   Though, replacing BGP with a clean-slate solution that can support fine-grained
+                                   control actions at scale is desired. However, Internet-wide deployment routers that
+                                   can only support BGP ensures that such clean-slate solution will not be able to make
+                                   any practical impact. Thus, the goal of my research was to design and implement
+                                   dirty-slate solutions that can ensure maximal impact with minimal deployment overhead.
+                                   </p>
+
                                </li>
                            </ul>
                            </div>
-
-                           <!--<div class="divider2"></div>-->
 
                        </div>
 
@@ -1008,7 +1017,7 @@
                     <!-- Secondary content area end -->
                 </div>
 
-             <div id="footer">
+            <div id="footer">
 
             </div>
 
