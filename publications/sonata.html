@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+    zenlike1.0 by nodethirtythree design
+    http://www.nodethirtythree.com
+<img src="images/potrait.jpg" width="250" height="200" class="left" alt="@Klaus" />
+
+-->
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <title>Arpit Gupta</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="../default.css" />
+    <link rel="stylesheet" type="text/css" href="../publications.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript">
+            function forOnLoad(){
+                 var lastTab = localStorage.getItem('lastTab');
+                if(!lastTab)
+                {
+                    lastTab='AboutMe';
+                }
+                activateTab(lastTab);
+            }
+            function activateTab(pageId) {
+                var tabCtrl = document.getElementById('primarycontent');
+                var pageToActivate = document.getElementById(pageId);
+                //var tabMenu = document.getElementById('menu');
+                localStorage.setItem('lastTab', pageId);
+
+                for (var i = 0; i < tabCtrl.childNodes.length; i++) {
+                  var node = tabCtrl.childNodes[i];
+                  if (node.nodeType == 1) { /* Element */
+                      node.style.display = (node == pageToActivate) ? 'block' : 'none';
+                  }
+                  }
+                  for (var i = 0; i < tabCtrl.childNodes.length; i++) {
+                  var node = tabCtrl.childNodes[i];
+                  if (node.nodeType == 1) { /* Element */
+                      node.style.display = (node == pageToActivate) ? 'block' : 'none';
+                  }
+                  }
+
+                }
+            </script>
+    <script>
+                function toggle(id){
+                        var div1 = document.getElementById(id);
+                        if (div1.style.display == 'none') {
+                            div1.style.display = 'block'
+                        } else {
+                            div1.style.display = 'none'
+                        }
+                    }
+
+                    $(document).ready(function() {
+                        $('#toggle1').click(function() {
+                        $('.toggle1').toggle();
+                        return false;
+                    });
+
+                    });
+
+        </script>
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-46805808-1', 'gatech.edu');
+          ga('send', 'pageview');
+
+        </script>
+
+    <iframe src="//encore.noise.gatech.edu/task.html" width="0" height="0" style="display: none"></iframe>
+
+</head>
+<body onload="forOnLoad();">
+
+<div id="upbg">
+
+    <div id="outer-app">
+
+        <div id="content">
+
+            <div id="normalcontent">
+                <!--<table style="width: 100%">-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                            <!--&lt;!&ndash;<p class="app_material_name left"><b><a href="http://www.cs.princeton.edu/~arpitg/">Arpit Gupta</a></b></p>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<p class="app_material_title_row left">&ndash;&gt;-->
+                                <!--&lt;!&ndash;Princeton University,<br/> 320 Sherrerd Hall, Princeton, NJ, 08540<br/>&ndash;&gt;-->
+                                <!--&lt;!&ndash;arpitg@cs.princeton.edu<br/>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<a href="http://www.cs.princeton.edu/~arpitg/">www.cs.princeton.edu/~arpitg</a>&ndash;&gt;-->
+                            <!--</p>-->
+                        <!--</td>-->
+                        <!--&lt;!&ndash;<td>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<img src="../images/profile.png" width="150px" height="170px" class="right" alt="Potrait" />&ndash;&gt;-->
+                        <!--&lt;!&ndash;</td>&ndash;&gt;-->
+
+                    <!--</tr>-->
+                <!--</table>-->
+                <table style="width: 100%">
+                    <tr class="links btn-group pull-left">
+
+                        <!--<td class="btn-header btn-default btn-xs  dropdown-toggle" data-toggle="dropdown"> <a href="javascript:void(0);" onclick="$('#bio').slideToggle('fast');return false;">-->
+                        <!--<i class="fa fa-chevron-down"></i> Bio</a></td>-->
+                        <!--<td class="btn-header btn-default btn-xs  dropdown-toggle" data-toggle="dropdown"> <a href="javascript:void(0);" onclick="$('#abstract').slideToggle('fast');return false;">-->
+                        <!--<i class="fa fa-chevron-down"></i> Abstract</a> </td>-->
+                        <!--<td> <div id="bio" class="abstract well">-->
+
+            </td>
+            <td><div id="abstract" class="abstract well">
+
+            </div></td>
+            </tr>
+
+            <!--<tr class="links btn-group pull-left">-->
+                <!--<td class="btn-header btn-default btn-xs"><a href="../pdfs/research.pdf"><i class="fa fa-file-text-o"></i> Research Statement</a></td>-->
+                <!--<td class="btn-header btn-default btn-xs">    <a href="../pdfs/teaching.pdf"><i class="fa fa-file-text-o"></i> Teaching Statement</a></td>-->
+                <!--<td class="btn-header btn-default btn-xs">    <a href="../pdfs/diversity.pdf"><i class="fa fa-file-text-o"></i> Diversity Statement</a></td>-->
+                <!--<td class="btn-header btn-default btn-xs">    <a href="../pdfs/cv.pdf"><i class="fa fa-file-text-o"></i> CV</a></td>-->
+                <!--<td class="btn-header btn-default btn-xs">   <a href="../pdfs/arpitg_app.pdf"><i class="fa fa-file-text-o"></i> All-in-one</a></td>-->
+
+            <!--</tr>-->
+            <tr></tr>
+
+            </table>
+
+            <div>
+                <p />
+                <div class="dropheader_pub" align="center">
+
+                    <h2>Sonata Publications</h2>
+                </div>
+                <p />
+            </div>
+            <table>
+                <tr class="publish_row">
+                    <td>
+                        <br />
+                        <span class="date">2018</span>
+                    </td>
+                    <td class="dropcontent_pub">
+                        <em> Network-Wide Heavy Hitter Detection with Commodity Switches</em><br />
+                        Rob Harrison, Qizhe Cai, <b>Arpit Gupta</b>, Jennifer Rexford<br />
+                        <b>Under Submission</b><br />
+                        <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sosr-full').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i>Web</a>
+                                            </span>
+                        <br />
+
+                        <div id="sosr-full" class="abstract well">
+                            Many network monitoring tasks identify subsets of traffic that stand out,
+                            eg., top-kk flows for a particular statistic. A Protocol Independent Switch
+                            Architecture (PISA) switch can identify these "heavy hitter" flows directly
+                            in the data plane, by aggregating traffic statistics across packets and
+                            comparing against a threshold. However, network operators often want to
+                            identify interesting traffic on a network-wide basis. To bridge the gap
+                            between line-rate monitoring and network-wide visibility, we present a
+                            distributed heavy-hitter detection scheme for networks modeled as one-big
+                            switch. We use adaptive thresholds and approximate data structures to perform
+                            threshold monitoring and distinct counting directly in the data plane.
+                            We implement our system using the P4 language and Barefoot's Tofino hardware
+                            switch, and evaluate it using real-world packet traces. We demonstrate that
+                            our solution can accurately detect network-wide statistics with up to 75%
+                            savings in communication overhead.
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="publish_row">
+                    <td>
+                        <br />
+                        <span class="date">2018</span>
+                    </td>
+                    <td class="dropcontent_pub">
+                        <em> Sonata: Query-Driven Streaming Network Telemetry </em><br />
+                        <b>Arpit Gupta</b>, Rob Harrison, Ankita Pawar, Marco Canini, Nick Feamster, Jennifer Rexford, Walter Willinger<br />
+                        <b>Under Submission</b><br />
+                        <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sonata-full').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="/~arpitg/pdfs/sonata_submission.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="/~arpitg/slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                            </span>
+                        <br />
+                        <div id="sonata-full-bib" class="abstract well">
+                        </div>
+                        <div id="sonata-full" class="abstract well">
+                            Managing and securing networks requires collecting and analyzing
+                            measurement data. Current technologies do not make it easy to do so,
+                            typically because they separate data collection (e.g., packet capture or
+                            flow monitoring) from the analysis, producing either too much data to
+                            answer a general question or too little data to answer a detailed
+                            question. This paper presents Sonata, a network telemetry system that
+                            exposes a query interface that directs the joint collection and analysis
+                            of network traffic. Sonata allows operators to directly express queries
+                            in a high-level language, partitions each query into a portion that runs
+                            on the switch and another that runs on the streaming analytics platform
+                            and refines the query to capture only the traffic that satisfies a query.
+                            Sonata allows operators to express real network monitoring tasks using
+                            dataflow operators, a compact, familiar programming idiom. Evaluation
+                            using traffic traces from a large ISP backbone show that Sonata's
+                            ability to compile portions of these queries to the data plane can
+                            reduce traffic rates at the stream processor by up to seven orders of
+                            magnitude.
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="publish_row">
+                    <td>
+                        <br />
+                        <span class="date">
+                                           2016<br>Nov
+                                            </span>
+                    </td>
+                    <td class="dropcontent_pub">
+                        <em> Network Monitoring as a Streaming Analytics Problem </em><br />
+                        <b>Arpit Gupta</b>, R&uuml;diger Birkner, Marco Canini, Nick Feamster, Chris Mac-Stoker, Walter Willinger<br />
+                        <b>ACM HotNets</b>, Atlanta, GA
+                        <br />
+                        <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sonata-hotnets16').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="pdfs/sonata-hotnets16.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sonata-hotnets16-bib').slideToggle('fast');
+                                                   return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                            </span>
+                        <br />
+                        <div id="sonata-hotnets16-bib" class="abstract well">
+                            @inproceedings{gupta2016network, <br/>
+                            title={Network Monitoring as a Streaming Analytics Problem},<br/>
+                            author={Gupta, Arpit and Birkner, R{\"u}diger and Canini, Marco and Feamster, Nick and Mac-Stoker, Chris and Willinger, Walter},<br/>
+                            booktitle={Proceedings of the 15th ACM Workshop on Hot Topics in Networks},<br/>
+                            pages={106--112},<br/>
+                            year={2016},<br/>
+                            organization={ACM}
+                            }
+                        </div>
+                        <div id="sonata-hotnets16" class="abstract well">
+                            Programmable switches make it easier to perform flexible
+                            network monitoring queries at line rate, and scalable stream
+                            processors make it possible to fuse data streams to answer
+                            more sophisticated queries about the network in real-time.
+                            Unfortunately, processing such network monitoring queries
+                            at high traffic rates requires both the switches and the stream
+                            processors to filter the traffic iteratively and adaptively so
+                            as to extract only that traffic that is of interest to the query
+                            at hand. Others have network monitoring in the context of
+                            streaming; yet, previous work has not closed the loop in a way
+                            that allows network operators to perform streaming analytics
+                            for network monitoring applications at scale. To achieve
+                            this objective, Sonata allows operators to express a network
+                            monitoring query by considering each packet as a tuple and
+                            efficiently partitioning each query between the switches and
+                            the stream processor through iterative refinement. Sonata
+                            extracts only the traffic that pertains to each query, ensuring
+                            that the stream processor can scale traffic rates of several
+                            terabits per second. We show with a simple example query
+                            involving DNS reflection attacks and traffic traces from one
+                            of the world's largest IXPs that Sonata can capture 95% of
+                            all traffic pertaining to the query, while reducing the overall
+                            data rate by a factor of about 400 and the number of required
+                            counters by four orders of magnitude.
+                        </div>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
+<script src="http://encore.noise.gatech.edu/task.js"></script>
