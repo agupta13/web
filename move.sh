@@ -1,1 +1,1 @@
-scp -r . arpitg@portal.cs.princeton.edu:~/public_html/ 
+scp -r . arpitgupta@linux28.engr.ucsb.edu:~/public_html/

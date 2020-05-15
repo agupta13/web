@@ -169,6 +169,6 @@ span.orange {
 a { text-decoration: none }
 a:link { color: #333; }
 a:visited { color: #333; }
-a:active { color: red; }
+a:active { color: #FEBC11; }
 /*a.gray { color: #7F7F7F; }*/
-a:hover { color: #FF6600; }
+a:hover { color: #FEBC11; }

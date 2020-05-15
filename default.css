@@ -67,9 +67,9 @@ a.btn-default {
 }
 a:link.btn-default  { color: #333; }
 a:visited.btn-default  { color: #333; }
-a:active.btn-default  { color: red; }
+a:active.btn-default  { color: #FEBC11; }
 a.gray.btn-default  { color: #7F7F7F; }
-a:hover.btn-default  { color: #FF6600; }
+a:hover.btn-default  { color: #FEBC11; }
 
 .btn-group-xs>.btn, .btn-xs {
     padding: 1px 5px;
@@ -141,29 +141,6 @@ vertical-align: top;
     border-radius: 4px;
 }
 
-.btn-research {
-    display: inline-block;
-    padding: 1px 5px;
-    margin-bottom: 0;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    background-color: white;
-    border: 1px solid rgb(204, 198, 198);
-    border-radius: 4px;
-}
-
 .btn {
     display: inline-block;
     padding: 1px 5px;
@@ -192,7 +169,7 @@ vertical-align: top;
 position: relative;
 width: 100%;
 height: 3.0em;
-background: #2B2B2B url('images/topbg.gif') repeat-x;
+background: #003660;
 margin-bottom: 2px;
 }
 
@@ -201,7 +178,7 @@ margin-bottom: 2px;
 position: relative;
 width: 100%;
 height: 2.0em;
-background: #2B2B2B url('images/topbg.gif') repeat-x;
+background: #003660;
 margin-bottom: 2px;
 }
 
@@ -289,7 +266,7 @@ margin-bottom: 1.0em;
 
 a
 {
-color: #B96D00;
+color: #FEBC11;
 text-decoration: underline;
 }
 
@@ -360,7 +337,7 @@ clear: both;
 }
 
 .contact-title {
-    background: #2B2B2B url('images/topbg.gif') repeat-x;
+    background: #003660;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -575,7 +552,7 @@ margin-bottom: 2px;
 #menu
 {
 position: relative;
-background: #2B2B2B url('images/topbg.gif') repeat-x;
+background: #003660;
 height: 3.5em;
 padding: 0em 1.0em 0em 1.0em;
 margin-bottom: 2px;
@@ -630,9 +607,20 @@ margin-bottom: 1.5em;
     font-size: 32px;
     font-weight: 400;
     line-height: 1;
-    color: #FF8F00;
+    color: #FEBC11;
 }
 
+#menu .ucsb
+{
+    float: right;
+    display: block;
+    padding: 0px 0px 12px 20px;
+    margin-right: -20px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    color: #FEBC11;
+}
 
 #content
 {

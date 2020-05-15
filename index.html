@@ -10,11 +10,16 @@
         <head>
         <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
         <title>Arpit Gupta</title>
+        <!--<link rel="shortcut icon" href="http://cs.ucsb.edu/sites/cs.ucsb.edu/themes/cs_subtheme/css/images/favicon.png" type="image/png" />
+        -->
+        <link rel="shortcut icon" href="https://www.ucsb.edu/themes/ucsb/favicon.ico" type="image/vnd.microsoft.icon />
+
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <link rel="stylesheet" type="text/css" href="default.css" />
-         <link rel="stylesheet" type="text/css" href="publications.css" />
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="publications.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
         <script type="text/javascript">
@@ -66,7 +71,7 @@
 
         </script>
 
-        <script>
+        <!--<script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -75,9 +80,9 @@
           ga('create', 'UA-46805808-1', 'gatech.edu');
           ga('send', 'pageview');
 
-        </script>
+        </script>-->
 
-        <iframe src="//encore.noise.gatech.edu/task.html" width="0" height="0" style="display: none"></iframe>
+       <!-- <iframe src="//encore.noise.gatech.edu/task.html" width="0" height="0" style="display: none"></iframe>-->
 
         </head>
         <body onload="forOnLoad();">
@@ -109,7 +114,7 @@
                                 <p />
                                  <div class="dropheader_pub" align="center">
 
-                                 <h2>Conferences</h2>
+<!--                                 <h2>Conferences</h2>-->
                                  </div>
                                 <p />
                              </div>
@@ -117,25 +122,148 @@
                                     <tr class="publish_row">
                                         <td>
                                             <br />
-                                            <span class="date">2018</span>
+                                            <span class="date">2020<br>July</span>
+                                        </td>
+                                        <td class="dropcontent_pub">
+                                            <em> (How Much) Does a Private WAN Improve Cloud Performance? </em><br />
+                                            Todd W Arnold, Ege Gurmericliler and Georgia Essig, Arpit Gupta, Matt Calder, Vasileios Giotsas, Ethan Katz-Bassett<br />
+                                            <b>IEEE INFOCOM 2020, </b>Beijing, China (Virtual)<br />
+                                            <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sonata-full1').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                            </span>
+                                            <br />
+                                            <div id="sonata-full1-bib" class="abstract well">
+                                            </div>
+                                            <div id="sonata-full1" class="abstract well">
+                                                The buildout of private Wide Area Networks (WANs) by cloud providers allows providers to extend their network to more locations and establish direct connectivity with end user Internet Service Providers (ISPs). Tenants of the cloud providers benefit from this proximity to users, which is supposed to provide improved performance by bypassing the public Internet. However, the performance impact of private WANs is not widely understood. To isolate the impact of a private WAN, we measure from globally distributed vantage points to a large cloud provider, comparing performance when using its worldwide WAN and when forcing traffic to instead use the public Internet. The benefits are not universal. While 40% of our vantage points saw improved performance when using the WAN, half of our vantage points did not see significant performance improvement, and 10% had better performance over the public Internet. We find that the benefits of the private WAN tend to improve with client-to-server distance, but that the benefits (or drawbacks) to a particular vantage point depend on specifics of its geographic and network connectivity.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="publish_row">
+                                        <td>
+                                            <br />
+                                            <span class="date">2019<br>Nov</span>
+                                        </td>
+                                        <td class="dropcontent_pub">
+                                            <em> An Effort to Democratize Networking Research in the Era of AI/ML </em><br />
+                                            Arpit Gupta, Chris Mac-Stoker,
+                                            Walter Willinger<br />
+                                            <b>ACM HotNets</b>, Princeton, NJ<br />
+                                            <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#netai-hotnets').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#netai-hotnets-bib').slideToggle('fast');return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                            </span>
+                                            <br />
+                                            <div id="netai-hotnets-bib"
+                                                 class="abstract well">
+
+                                            </div>
+                                            <div id="netai-hotnets" class="abstract well">
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="publish_row">
+                                        <td>
+                                            <br />
+                                            <span class="date">2019<br>Nov</span>
+                                        </td>
+                                        <td class="dropcontent_pub">
+                                            <em>Beating BGP is Harder than We Thought</em><br />
+                                            Todd Arnold, Matt Calder, Italo
+                                            Cunha, Arpit Gupta, Harsha V.
+                                            Madhyastha, Michael Schapira,
+                                            Ethan Katz-Bassett <br />
+                                            <b>ACM HotNets</b>, Princeton, NJ<br />
+                                            <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#bgp-hotnets').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#bgp-hotnets-bib').slideToggle('fast');return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                            </span>
+                                            <br />
+                                            <div id="bgp-hotnets-bib"
+                                                 class="abstract well">
+
+                                            </div>
+                                            <div id="bgp-hotnets"
+                                                 class="abstract well">
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="publish_row">
+                                        <td>
+                                            <br />
+                                            <span class="date">2019<br>Aug</span>
+                                        </td>
+                                        <td class="dropcontent_pub">
+                                            <em> ONTAS: Flexible and Scalable Online Network Traffic Anonymization System</em><br />
+                                            Hyojoon Kim, <b>Arpit Gupta</b><br />
+                                            <b>ACM NetAI</b>, Beijing, China<br />
+                                            <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#ontas').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                            </span>
+                                            <br />
+
+                                            <div id="ontas" class="abstract well">
+                                                Access to packet traces is required not only to detect and diagnose various network
+                                                issues related to performance and security, but also to train intelligent learning
+                                                models enabling networks that can run themselves. However, packets in a network carry
+                                                a lot of information which can be used to personally identify users and their online
+                                                behavior. This requires network operators to anonymize packet traces before sharing
+                                                them with other researchers and analysts. Existing tools anonymize packet traces in
+                                                an offline manner, which incurs significant computational, storage, and memory
+                                                overhead---limiting their ability to scale as the volume of the collected packet
+                                                trace increases. In this paper, we present the design and implementation of an
+                                                Online Network Traffic Anonymization System, ONTAS, which can flexibly anonymize
+                                                packet traces in the data plane itself using modern PISA-based programmable switches.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="publish_row">
+                                        <td>
+                                            <br />
+                                            <span class="date">2018<br>Aug</span>
                                         </td>
                                         <td class="dropcontent_pub">
                                             <em> Sonata: Query-Driven Streaming Network Telemetry </em><br />
-                                            <b>Arpit Gupta</b>, Rob Harrison, Ankita Pawar, Marco Canini, Nick Feamster, Jennifer Rexford, Walter Willinger<br />
-                                            <b>Under Submission</b><br />
+                                            <b>Arpit Gupta</b>, Rob Harrison, Marco Canini, Nick Feamster, Jennifer Rexford, Walter Willinger<br />
+                                            <b>ACM SIGCOMM 2018, </b>Budapest, Hungary<br />
                                             <span class="links btn-group pull-left">
                                                 <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#sonata-full').slideToggle('fast');return false;">
+                                                   href="javascript:void(0);" onclick="$('#sonata-full1').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="pdfs/sonata_submission.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="pdfs/sonata.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
                                                 <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
                                                 <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
                                             </span>
                                             <br />
-                                            <div id="sonata-full-bib" class="abstract well">
+                                            <div id="sonata-full1-bib" class="abstract well">
                                             </div>
-                                            <div id="sonata-full" class="abstract well">
+                                            <div id="sonata-full1" class="abstract well">
                                                 Managing and securing networks requires collecting and analyzing
                                                 measurement data. Current technologies do not make it easy to do so,
                                                 typically because they separate data collection (e.g., packet capture or
@@ -157,74 +285,180 @@
                                         </td>
                                     </tr>
 
+
+
                                     <tr class="publish_row">
                                         <td>
-                                          <br />
-                                            <span class="date">
-                                                2017<br>Apr
-                                            </span>
+                                            <br />
+                                            <span class="date">2018<br>Mar</span>
                                         </td>
                                         <td class="dropcontent_pub">
-                                            <em> Concise Encoding of Flow Attributes in SDN Switches </em><br />
-                                            Robert MacDavid, R&uuml;diger Birkner, Ori Rottenstreich,
-                                            <b>Arpit Gupta</b>, Nick Feamster, Jennifer Rexford<br />
-                                            <b>ACM SOSR</b>,  Santa Clara, CA<br/>
-                                            <i class="fa fa-trophy"></i> <em>Winner of <b> Best Paper Award</b><br />
+                                            <em> Network-Wide Heavy Hitter Detection with Commodity Switches</em><br />
+                                            Rob Harrison, Qizhe Cai, <b>Arpit Gupta</b>, Jennifer Rexford<br />
+                                            <b>ACM SOSR</b>, Los Angeles, CA<br />
                                             <span class="links btn-group pull-left">
                                                 <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                href="javascript:void(0);" onclick="$('#concise-sosr').slideToggle('fast');return false;">
+                                                   href="javascript:void(0);" onclick="$('#sosr-full').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="pdfs/pathsets.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/pathsets-sosr17.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
-                                                <a href="https://github.com/robertmacdavid/PathSets-private" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://sdx.cs.princeton.edu" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
-                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                href="javascript:void(0);" onclick="$('#concise-sosr-bib').slideToggle('fast');return false;">
-                                                <i class="fa fa-chevron-down"></i> BibTeX</a>
+                                                <a href="pdfs/dhhd.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i>Web</a>
                                             </span>
                                             <br />
-                                            <div id="concise-sosr-bib" class="abstract well">
-                                                @inproceedings{macdavid2017concise,<br/>
-                                                title={Concise encoding of flow attributes in SDN switches},<br/>
-                                                author={MacDavid, Robert and Birkner, Rudiger and Rottenstreich,
-                                                Ori and Gupta, Arpit and Feamster, Nick and Rexford, Jennifer},<br/>
-                                                booktitle={Proceedings of the Symposium on SDN Research},<br/>
-                                                pages={48--60},<br/>
-                                                year={2017},<br/>
-                                                organization={ACM}
-                                                }
-                                            </div>
-                                            <div id="concise-sosr" class="abstract well">
-                                              Network devices such as routers and switches forward traffic
-                                              based on entries in their local forwarding tables. Although
-                                              these forwarding tables conventionally make decisions based
-                                              on a packet header field such as a destination address, tagging
-                                              flows with sets or sequences of attributes and making
-                                              forwarding decisions based on these attributes can enable
-                                              richer network policies. For example, devices at the edge of
-                                              a network could add a tag to each packet that encodes a set
-                                              of egress locations, a set of host permissions, or a sequence
-                                              of middleboxes to traverse; simpler devices in the core of the
-                                              network could then forward packets based on this tag.
-                                              Unfortunately, naive construction of these tags can create
-                                              forwarding tables that grow quadratically with the number
-                                              of elements in the set or sequence prohibitive for commodity
-                                              network devices. In this paper, we present PathSets, a
-                                              compression algorithm that makes such encodings practical.
-                                              The algorithm encodes sets or sequences (e.g., middlebox service
-                                              chains, lists of next-hop network devices) in a compact
-                                              tag that fits in a small packet-header field. Our evaluation
-                                              shows that PathSets can encode attribute sets and sequences
-                                              for large networks using tag widths competitive with existing
-                                              approaches and that the number of forwarding rules grows
-                                              linearly with the number of attributes encoded.
+
+                                            <div id="sosr-full" class="abstract well">
+                                                Many network monitoring tasks identify subsets of traffic that stand out,
+                                                eg., top-kk flows for a particular statistic. A Protocol Independent Switch
+                                                Architecture (PISA) switch can identify these "heavy hitter" flows directly
+                                                in the data plane, by aggregating traffic statistics across packets and
+                                                comparing against a threshold. However, network operators often want to
+                                                identify interesting traffic on a network-wide basis. To bridge the gap
+                                                between line-rate monitoring and network-wide visibility, we present a
+                                                distributed heavy-hitter detection scheme for networks modeled as one-big
+                                                switch. We use adaptive thresholds and approximate data structures to perform
+                                                threshold monitoring and distinct counting directly in the data plane.
+                                                We implement our system using the P4 language and Barefoot's Tofino hardware
+                                                switch, and evaluate it using real-world packet traces. We demonstrate that
+                                                our solution can accurately detect network-wide statistics with up to 75%
+                                                savings in communication overhead.
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr class="publish_row">
+                                    <td>
+                                        <br />
+                                        <span class="date">
+                                                2017<br>Apr
+                                            </span>
+                                    </td>
+                                    <td class="dropcontent_pub">
+                                        <em> Concise Encoding of Flow Attributes in SDN Switches </em><br />
+                                        Robert MacDavid, R&uuml;diger Birkner, Ori Rottenstreich,
+                                        <b>Arpit Gupta</b>, Nick Feamster, Jennifer Rexford<br />
+                                        <b>ACM SOSR</b>,  Santa Clara, CA<br/>
+                                        <i class="fa fa-trophy"></i> <em>Winner of <b> Best Paper Award</b><br />
+                                        <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#concise-sosr').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="pdfs/pathsets.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="slides/pathsets-sosr17.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="https://github.com/robertmacdavid/PathSets-private" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="http://sdx.cs.princeton.edu" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#concise-sosr-bib').slideToggle('slow'); return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTeX</a>
+                                            </span>
+                                        <br />
+                                        <div id="concise-sosr-bib" class="abstract well">
+                                            @inproceedings{macdavid2017concise,<br/>
+                                            title={Concise encoding of flow attributes in SDN switches},<br/>
+                                            author={MacDavid, Robert and Birkner, Rudiger and Rottenstreich,
+                                            Ori and Gupta, Arpit and Feamster, Nick and Rexford, Jennifer},<br/>
+                                            booktitle={Proceedings of the Symposium on SDN Research},<br/>
+                                            pages={48--60},<br/>
+                                            year={2017},<br/>
+                                            organization={ACM}
+                                            }
+                                        </div>
+                                        <div id="concise-sosr" class="abstract well">
+                                            Network devices such as routers and switches forward traffic
+                                            based on entries in their local forwarding tables. Although
+                                            these forwarding tables conventionally make decisions based
+                                            on a packet header field such as a destination address, tagging
+                                            flows with sets or sequences of attributes and making
+                                            forwarding decisions based on these attributes can enable
+                                            richer network policies. For example, devices at the edge of
+                                            a network could add a tag to each packet that encodes a set
+                                            of egress locations, a set of host permissions, or a sequence
+                                            of middleboxes to traverse; simpler devices in the core of the
+                                            network could then forward packets based on this tag.
+                                            Unfortunately, naive construction of these tags can create
+                                            forwarding tables that grow quadratically with the number
+                                            of elements in the set or sequence prohibitive for commodity
+                                            network devices. In this paper, we present PathSets, a
+                                            compression algorithm that makes such encodings practical.
+                                            The algorithm encodes sets or sequences (e.g., middlebox service
+                                            chains, lists of next-hop network devices) in a compact
+                                            tag that fits in a small packet-header field. Our evaluation
+                                            shows that PathSets can encode attribute sets and sequences
+                                            for large networks using tag widths competitive with existing
+                                            approaches and that the number of forwarding rules grows
+                                            linearly with the number of attributes encoded.
+                                        </div>
+                                    </td>
+                                    </tr>
+
+
+                                    <tr class="publish_row">
                                         <td>
-                                          <br />
+                                            <br />
+                                            <span class="date">2017<br>Apr</span>
+                                        </td>
+                                        <td class="dropcontent_pub">
+                                            <em> SDX-Based Flexibility or Internet Correctness? Pick Two! </em><br />
+                                            R&uuml;diger Birkner, <b>Arpit Gupta</b>, Nick Feamster, Laurent Vanbever<br />
+                                            <b>ACM SOSR</b>, Santa Clara, CA<br />
+                                            <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sdx-correctness-sosr').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="pdfs/sidr.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="https://github.com/nsg-ethz/SIDR" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sdx-correctness-sosr-bib').slideToggle('fast');return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                            </span>
+                                            <br />
+                                            <div id="sdx-correctness-sosr-bib" class="abstract well">
+                                                @inproceedings{birkner2017sdx,<br />
+                                                title={SDX-Based Flexibility or Internet Correctness?: Pick Two!},<br />
+                                                author={Birkner, R{\"u}diger and Gupta, Arpit and Feamster, Nick and Vanbever, Laurent},<br />
+                                                booktitle={Proceedings of the Symposium on SDN Research},<br />
+                                                pages={1--7},<br />
+                                                year={2017},<br />
+                                                organization={ACM}
+                                                }
+                                            </div>
+                                            <div id="sdx-correctness-sosr" class="abstract well">
+                                                Software-Defined Internet eXchange Points (SDXes) are recently
+                                                gaining momentum, with several SDXes now running
+                                                in production. The deployment of multiple SDXes on the Internet
+                                                raises the question of whether the interactions between
+                                                these SDXes will cause correctness problems, since SDX
+                                                policies can deflect traffic away from the default BGP route
+                                                for a prefix, effectively breaking the congruence between the
+                                                control plane and data plane. Although one deflection on a
+                                                path will never cause loops to occur, combining multiple deflections
+                                                at different SDXes can lead to persistent forwarding
+                                                loops that the control plane never sees.
+                                                In this paper, we introduce SIDR, a coordination framework
+                                                that enables SDXes to verify the end-to-end correctness (i.e.,
+                                                loop freedom) of an SDX policy. The challenge behind SIDR
+                                                is to strike a balance between privacy, scalability, and flexibility.
+                                                SIDR addresses these challenges by: (i) not requiring
+                                                SDXes to disclose the flow space their SDX policies act on,
+                                                only the next-hop they deflect to; and (ii) minimizing the number
+                                                of SDXes that must exchange state to detect correctness
+                                                problems. SIDR manages to preserve the flexibility of SDX
+                                                policies by activating the vast majority of the safe policies,
+                                                the policies that do not create a loop. We implemented SIDR
+                                                on the SDX platform and showed its practical effectiveness:
+                                                SIDR can activate 91% of all safe policies while preserving
+                                                privacy and scalability and can perform correctness checks in
+                                                about one second.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="publish_row">
+
+
+                                    <tr class="publish_row">
+                                        <td>
+                                            <br />
                                             <span class="date">
                                                 2016<br>Mar
                                             </span>
@@ -236,23 +470,23 @@
                                             <b>USENIX NSDI</b>, Santa Clara, CA<br />
                                             <i class="fa fa-trophy"></i> <em>Winner of <b>Community Award</b><br />
                                             <i class="fa fa-trophy"></i> <em>  Selected in the <b>Best of the Rest</b> session at USENIX ATC, 2016</em> <br />
-                                                <em>Media Articles</em>: <a href="http://goo.gl/iYSyNY">CircleID</a>,
-                                                <a href="https://www.opennetworking.org/?p=2047&option=com_wordpress&amp;Itemid=316">ONF Blog</a>,
-                                                <a href="http://goo.gl/4ryMhO" >NewIP</a>
+                                            <em>Media Articles</em>: <a href="http://goo.gl/iYSyNY">CircleID</a>,
+                                            <a href="https://www.opennetworking.org/?p=2047&option=com_wordpress&amp;Itemid=316">ONF Blog</a>,
+                                            <a href="http://goo.gl/4ryMhO" >NewIP</a>
+                                        </em>
                                             </em>
-                                          </em>
 
                                             <br />
                                             <span class="links btn-group pull-left">
                                                 <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                href="javascript:void(0);" onclick="$('#isdx').slideToggle('fast');return false;">
+                                                   href="javascript:void(0);" onclick="$('#isdx').slideToggle('fast');return false;">
                                                   <i class="fa fa-chevron-down"></i> abstract</a>
                                                 <a href="pdfs/isdx.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
                                                 <a href="slides/iSDX-nsdi_v7.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
                                                 <a href="https://github.com/sdn-ixp/iSDX" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
                                                 <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i>Web</a>
                                                 <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                href="javascript:void(0);" onclick="$('#isdx-bib').slideToggle('fast');return false;">
+                                                   href="javascript:void(0);" onclick="$('#isdx-bib').slideToggle('fast');return false;">
                                                  <i class="fa fa-chevron-down"></i> BibTeX</a>
                                             </span>
                                             <br />
@@ -268,30 +502,201 @@
                                                 }
                                             </div>
                                             <div id="isdx" class="abstract well">
-                                              Software-Defined Internet Exchange Points (SDXes)
-                                              promise to significantly increase the flexibility and function
-                                              of interdomain traffic delivery on the Internet. Unfortunately,
-                                              current SDX designs cannot yet achieve the scale
-                                              required for large Internet exchange points (IXPs), which
-                                              can host hundreds of participants exchanging traffic for
-                                              hundreds of thousands of prefixes. Existing platforms are
-                                              indeed too slow and inefficient to operate at this scale, typically
-                                              requiring minutes to compile policies and millions
-                                              of forwarding rules in the data plane.
-                                              We motivate, design, and implement iSDX, the first
-                                              SDX architecture that can operate at the scale of the
-                                              largest IXPs. We show that iSDX reduces both policy
-                                              compilation time and forwarding table size by two orders
-                                              of magnitude compared to current state-of-the-art SDX
-                                              controllers. Our evaluation against a trace from one of the
-                                              largest IXPs in the world found that iSDX can compile
-                                              a realistic set of policies for 500 IXP participants in less
-                                              than three seconds. Our public release of iSDX, complete
-                                              with tutorials and documentation, is already spurring early
-                                              adoption in operational networks.
+                                                Software-Defined Internet Exchange Points (SDXes)
+                                                promise to significantly increase the flexibility and function
+                                                of interdomain traffic delivery on the Internet. Unfortunately,
+                                                current SDX designs cannot yet achieve the scale
+                                                required for large Internet exchange points (IXPs), which
+                                                can host hundreds of participants exchanging traffic for
+                                                hundreds of thousands of prefixes. Existing platforms are
+                                                indeed too slow and inefficient to operate at this scale, typically
+                                                requiring minutes to compile policies and millions
+                                                of forwarding rules in the data plane.
+                                                We motivate, design, and implement iSDX, the first
+                                                SDX architecture that can operate at the scale of the
+                                                largest IXPs. We show that iSDX reduces both policy
+                                                compilation time and forwarding table size by two orders
+                                                of magnitude compared to current state-of-the-art SDX
+                                                controllers. Our evaluation against a trace from one of the
+                                                largest IXPs in the world found that iSDX can compile
+                                                a realistic set of policies for 500 IXP participants in less
+                                                than three seconds. Our public release of iSDX, complete
+                                                with tutorials and documentation, is already spurring early
+                                                adoption in operational networks.
                                             </div>
                                         </td>
                                     </tr>
+
+
+                                    <tr class="publish_row">
+                                        <td>
+                                            <br />
+                                            <span class="date">2016<br/>Mar</span>
+                                        </td>
+                                        <td class="dropcontent_pub">
+                                            <em> Authorizing Network Control at Software Defined Internet Exchange Points </em><br/>
+                                            <b>Arpit Gupta</b>, Nick Feamster, Laurent Vanbever<br />
+                                            <b>ACM SOSR</b>, Santa Clara, CA<br />
+                                            <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#flanc').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="pdfs/flanc.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="slides/flanc-sosr_v4.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#flanc-bib').slideToggle('fast');return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                            </span>
+                                            <br />
+                                            <div id="flanc-bib" class="abstract well">
+                                                @inproceedings{gupta2016authorizing,<br />
+                                                title={Authorizing network control at software defined internet exchange points},<br />
+                                                author={Gupta, Arpit and Feamster, Nick and Vanbever, Laurent},<br />
+                                                booktitle={Proceedings of the Symposium on SDN Research},<br />
+                                                pages={16},<br />
+                                                year={2016},<br />
+                                                organization={ACM}
+                                                }
+                                            </div>
+                                            <div id="flanc" class="abstract well">
+                                                Software Defined Internet Exchange Points (SDXes) increase the
+                                                flexibility of interdomain traffic delivery on the Internet. Yet, an
+                                                SDX inherently requires multiple participants to have access to
+                                                a single, shared physical switch, which creates the need for an
+                                                authorization mechanism to mediate this access. In this paper, we
+                                                introduce a logic and mechanism called FLANC (A Formal Logic
+                                                for Authorizing Network Control), which authorizes each participant
+                                                to control forwarding actions on a shared switch and also
+                                                allows participants to delegate forwarding actions to other participants
+                                                at the switch (e.g., a trusted third party). FLANC extends
+                                                “says” and “speaks for” logic that have been previously designed for
+                                                operating system objects to handle expressions involving network
+                                                traffic flows. We describe FLANC, explain how participants can use
+                                                it to express authorization policies for realistic interdomain routing
+                                                settings, and demonstrate that it is efficient enough to operate in
+                                                operational settings.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+
+
+                                    <tr class="publish_row">
+                                        <td>
+                                            <br />
+                                            <span class="date">
+                                           2016<br>Nov
+                                            </span>
+                                        </td>
+                                        <td class="dropcontent_pub">
+                                            <em> Network Monitoring as a Streaming Analytics Problem </em><br />
+                                            <b>Arpit Gupta</b>, R&uuml;diger Birkner, Marco Canini, Nick Feamster, Chris Mac-Stoker, Walter Willinger<br />
+                                            <b>ACM HotNets</b>, Atlanta, GA
+                                            <br />
+                                            <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sonata-hotnets16').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="pdfs/sonata-hotnets16.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#sonata-hotnets16-bib').slideToggle('fast');
+                                                   return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                            </span>
+                                            <br />
+                                            <div id="sonata-hotnets16-bib" class="abstract well">
+                                                @inproceedings{gupta2016network, <br/>
+                                                title={Network Monitoring as a Streaming Analytics Problem},<br/>
+                                                author={Gupta, Arpit and Birkner, R{\"u}diger and Canini, Marco and Feamster, Nick and Mac-Stoker, Chris and Willinger, Walter},<br/>
+                                                booktitle={Proceedings of the 15th ACM Workshop on Hot Topics in Networks},<br/>
+                                                pages={106--112},<br/>
+                                                year={2016},<br/>
+                                                organization={ACM}
+                                                }
+                                            </div>
+                                            <div id="sonata-hotnets16" class="abstract well">
+                                                Programmable switches make it easier to perform flexible
+                                                network monitoring queries at line rate, and scalable stream
+                                                processors make it possible to fuse data streams to answer
+                                                more sophisticated queries about the network in real-time.
+                                                Unfortunately, processing such network monitoring queries
+                                                at high traffic rates requires both the switches and the stream
+                                                processors to filter the traffic iteratively and adaptively so
+                                                as to extract only that traffic that is of interest to the query
+                                                at hand. Others have network monitoring in the context of
+                                                streaming; yet, previous work has not closed the loop in a way
+                                                that allows network operators to perform streaming analytics
+                                                for network monitoring applications at scale. To achieve
+                                                this objective, Sonata allows operators to express a network
+                                                monitoring query by considering each packet as a tuple and
+                                                efficiently partitioning each query between the switches and
+                                                the stream processor through iterative refinement. Sonata
+                                                extracts only the traffic that pertains to each query, ensuring
+                                                that the stream processor can scale traffic rates of several
+                                                terabits per second. We show with a simple example query
+                                                involving DNS reflection attacks and traffic traces from one
+                                                of the world's largest IXPs that Sonata can capture 95% of
+                                                all traffic pertaining to the query, while reducing the overall
+                                                data rate by a factor of about 400 and the number of required
+                                                counters by four orders of magnitude.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr class="publish_row">
+                                        <td>
+                                            <br />
+                                            <span class="date">2014<br>Mar</span>
+                                        </td>
+                                        <td class="dropcontent_pub">
+                                            <em>Peering at the Internet's Frontier: A First Look at ISP Interconnectivity in Africa</em><br />
+                                            <b>Arpit Gupta</b>, M. Calder, N. Feamster, M. Chetty, E. Calandro, E. Katz-Bassett<br />
+                                            <b>PAM</b>, Los Angeles, CA<br/>
+                                            <i class="fa fa-graduation-cap"></i> <em><b>50+</b> citations</em><br />
+                                            <span class="links btn-group pull-left">
+                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#african_interconns').slideToggle('fast');return false;">
+                                                  <i class="fa fa-chevron-down"></i> abstract</a>
+                                                <a href="pdfs/african_interconns.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                                <a href="slides/Africa-PAM14.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                                <a href="https://github.com/agupta13/Peering-Africa" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                   href="javascript:void(0);" onclick="$('#african_interconns-bib').slideToggle('fast');return false;">
+                                                <i class="fa fa-chevron-down"></i> BibTex</a>
+                                            </span>
+                                            <br />
+                                            <div id="african_interconns-bib" class="abstract well">
+                                                @inproceedings{gupta2014peering,<br/>
+                                                title={Peering at the Internet's Frontier: A First Look at ISP Interconnectivity in Africa.},<br/>
+                                                author={Gupta, Arpit and Calder, Matt and Feamster, Nick and Chetty, Marshini and Calandro, Enrico and Katz-Bassett, Ethan},<br/>
+                                                booktitle={PAM},<br/>
+                                                pages={204--213},<br/>
+                                                year={2014}
+                                                }
+                                            </div>
+                                            <div id="african_interconns" class="abstract well">
+                                                In developing regions, the performance to commonly visited destinations
+                                                is dominated by the network latency, which in turn depends on the connectivity
+                                                from ISPs in these regions to the locations that host popular sites and
+                                                content. We take a first look at ISP interconnectivity between various regions in
+                                                Africa and discover many circuitous Internet paths that should remain local often
+                                                detour through Europe. We investigate the causes of circuitous Internet paths and
+                                                evaluate the benefits of increased peering and better cache proxy placement for
+                                                reducing latency to popular Internet sites.
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+
+
 
                                     <tr class="publish_row">
                                         <td>
@@ -304,7 +709,8 @@
                                             <em> Kinetic: Verifiable Dynamic Network Control </em><br />
                                             Hyojoon Kim, Joshua Reich, <b>Arpit Gupta</b>, Muhammad Shahbaz, Nick Feamster, Russ Clark<br />
                                             <b>USENIX NSDI, </b> Oakland, CA<br />
-                                            <i class="fa fa-graduation-cap"></i> <em><b>60+</b> citations</em><br />
+                                            <i
+                                                    class="fa fa-graduation-cap"></i> <em><b>110+</b> citations</em><br />
                                             <span class="links btn-group pull-left">
                                                 <a class="btn btn-default btn-xs dropdown-toggle"
                                                 data-toggle="dropdown" href="javascript:void(0);"
@@ -365,7 +771,8 @@
                                             <b>Arpit Gupta</b>, L. Vanbever, M. Shahbaz, S. Donovan, B. Schlinker,
                                             N. Feamster, J. Rexford, S. Shenker, R. Clark, E. Katz-Bassett<br />
                                             <b>ACM SIGCOMM, </b> Chicago, IL<br />
-                                            <i class="fa fa-graduation-cap"></i> <em><b>210+</b> citations, one of the highest for SIGCOMM 2014</em><br />
+                                            <i
+                                                    class="fa fa-graduation-cap"></i> <em><b>330+</b> citations, one of the highest for SIGCOMM 2014</em><br />
                                             <span class="links btn-group pull-left">
                                                 <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
                                                 href="javascript:void(0);" onclick="$('#sdx').slideToggle('fast');return false;">
@@ -432,7 +839,8 @@
                                             <br />
                                             <b>Arpit Gupta</b>, Jeongki Min, Injong Rhee<br />
                                             <b>ACM CoNEXT, </b>Nice, France<br/>
-                                            <i class="fa fa-graduation-cap"></i> <em><b>50+</b> citations</em><br />
+                                            <i
+                                                    class="fa fa-graduation-cap"></i> <em><b>60+</b> citations</em><br />
                                             <em>Media Articles</em>:
                                             <a href="http://www.engadget.com/2012/11/15/nc-state-university-wifox/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+weblogsinc%2Fengadget+(Engadget)"> Engadget</a>,
                                             <a href="http://hardware.slashdot.org/story/12/11/15/0013239/new-wifi-protocol-boosts-congested-wireless-network-throughput-by-700"> Slashdot</a>,
@@ -462,26 +870,7 @@
                                                 }
                                             </div>
                                             <div id="wifox" class="abstract well">
-                                                Distributed applications and web services, such as online stores or
-                                                social networks, are expected to be scalable, available, responsive, and
-                                                fault-tolerant. To meet these steep requirements in the face of high
-                                                round-trip latencies, network partitions, server failures, and load spikes,
-                                                applications use eventually consistent datastores that allow them to weaken
-                                                the consistency of some data. However, making this transition is highly
-                                                error-prone because relaxed consistency models are notoriously difficult
-                                                to understand and test. In this work, we propose a new programming model
-                                                for distributed data that makes consistency properties explicit and uses
-                                                a type system to enforce consistency safety. With the Inconsistent,
-                                                Performance-bound, Approximate (IPA) storage system, programmers specify
-                                                performance targets and correctness requirements as constraints on persistent
-                                                data structures and handle uncertainty about the result of datastore reads
-                                                using new consistency types. We implement a prototype of this model in
-                                                Scala on top of an existing datastore, Cassandra, and use it to make
-                                                performance/correctness tradeoffs in two applications: a ticket sales
-                                                service and a Twitter clone. Our evaluation shows that IPA prevents
-                                                consistency-based programming errors and adapts consistency automatically
-                                                in response to changing network conditions, performing comparably to weak
-                                                consistency and 2-10x faster than strong consistency.
+
                                             </div>
                                         </td>
 
@@ -492,319 +881,12 @@
                                <p />
                                <div class="dropheader_pub" align="center">
 
-                                   <h2>Workshops & Short Papers</h2>
+<!--                                   <h2>Workshops & Short Papers</h2>-->
                                </div>
                                <p />
                            </div>
                            <table>
-                               <tr class="publish_row">
-                                   <td>
-                                       <br />
-                                       <span class="date">2018</span>
-                                   </td>
-                                   <td class="dropcontent_pub">
-                                       <em> Network-Wide Heavy Hitter Detection with Commodity Switches</em><br />
-                                       Rob Harrison, Qizhe Cai, <b>Arpit Gupta</b>, Jennifer Rexford<br />
-                                       <b>Under Submission</b><br />
-                                       <span class="links btn-group pull-left">
-                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#sosr-full').slideToggle('fast');return false;">
-                                                  <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i>Web</a>
-                                            </span>
-                                       <br />
 
-                                       <div id="sosr-full" class="abstract well">
-                                           Many network monitoring tasks identify subsets of traffic that stand out,
-                                           eg., top-kk flows for a particular statistic. A Protocol Independent Switch
-                                           Architecture (PISA) switch can identify these "heavy hitter" flows directly
-                                           in the data plane, by aggregating traffic statistics across packets and
-                                           comparing against a threshold. However, network operators often want to
-                                           identify interesting traffic on a network-wide basis. To bridge the gap
-                                           between line-rate monitoring and network-wide visibility, we present a
-                                           distributed heavy-hitter detection scheme for networks modeled as one-big
-                                           switch. We use adaptive thresholds and approximate data structures to perform
-                                           threshold monitoring and distinct counting directly in the data plane.
-                                           We implement our system using the P4 language and Barefoot's Tofino hardware
-                                           switch, and evaluate it using real-world packet traces. We demonstrate that
-                                           our solution can accurately detect network-wide statistics with up to 75%
-                                           savings in communication overhead.
-                                       </div>
-                                   </td>
-                               </tr>
-
-                               <tr class="publish_row">
-                                   <td>
-                                       <br />
-                                       <span class="date">2018</span>
-                                   </td>
-                                   <td class="dropcontent_pub">
-                                       <em> Preserving Privacy at IXPs</em><br />
-                                       Xiaohe Hu, <b>Arpit Gupta</b>, Nick Feamster, Aurojit Panda, Scott Shenker<br />
-                                       <b>Under Submission</b><br />
-                                       <span class="links btn-group pull-left">
-                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#ccr-abstract').slideToggle('fast');return false;">
-                                                  <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
-                                            </span>
-                                       <br />
-
-                                       <div id="ccr-abstract" class="abstract well">
-                                           Autonomous systems (ASes) on the Internet increasingly rely on Internet
-                                           Exchange Points (IXPs) for peering. IXPs provide the physical infrastructure
-                                           including a fabric required to interconnect ASes. A single IXP may
-                                           interconnect several 100s or 1000s of participants (ASes) all of which might
-                                           peer with each other. This requires each participant to maintain a BGP
-                                           session with every other participant in an IXP and poses a scaling challenge.
-                                           IXPs have addressed this challenge through the use of route servers. When
-                                           route servers are used IXP participants outsource parts of their policy to
-                                           the route server and maintain a single BGP session with it. The route server
-                                           is responsible for implementing parts of each participant policies -- often
-                                           export and import policies. While route servers allow IXPs to scale, they
-                                           require participants to trust the IXP and reveal their policies, a drastic
-                                           change from the accepted norm where all policies are kept private. In this
-                                           paper we look at techniques to build route servers which provide the same
-                                           functionality as existing route servers (thus providing scalability) without
-                                           requiring participants to reveal their policies thus preserving the status
-                                           quo and enabling wider adoption of IXPs. Prior work has looked at secure
-                                           multi-party computation (SMPC) as a means of implementing such route servers
-                                           however this affects performance and reduces policy flexibility. In this
-                                           paper we take a different tack and build on trusted execution environments
-                                           (TEEs) such as Intel SGX to keep policies private. We present results from
-                                           an initial route server implementation that runs under Intel SGX and show
-                                           that our approach has 20� better performance than SMPC based
-                                           approaches. Furthermore, we demonstrate that the additional privacy provided
-                                           by our approach comes at minimal cost and our implementation is at worse
-                                           2.1� slower than a current route server implementation (and in some
-                                           situations up to 2� faster).
-                                       </div>
-                                   </td>
-                               </tr>
-
-                               <tr class="publish_row">
-                                   <td>
-                                       <br />
-                                       <span class="date">2017<br>Apr</span>
-                                   </td>
-                                   <td class="dropcontent_pub">
-                                       <em> SDX-Based Flexibility or Internet Correctness? Pick Two! </em><br />
-                                       R&uuml;diger Birkner, <b>Arpit Gupta</b>, Nick Feamster, Laurent Vanbever<br />
-                                       <b>ACM SOSR</b>, Santa Clara, CA<br />
-                                       <span class="links btn-group pull-left">
-                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#sdx-correctness-sosr').slideToggle('fast');return false;">
-                                                  <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="pdfs/sidr.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
-                                                <a href="https://github.com/nsg-ethz/SIDR" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
-                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#sdx-correctness-sosr-bib').slideToggle('fast');return false;">
-                                                <i class="fa fa-chevron-down"></i> BibTex</a>
-                                            </span>
-                                       <br />
-                                       <div id="sdx-correctness-sosr-bib" class="abstract well">
-                                           @inproceedings{birkner2017sdx,<br />
-                                           title={SDX-Based Flexibility or Internet Correctness?: Pick Two!},<br />
-                                           author={Birkner, R{\"u}diger and Gupta, Arpit and Feamster, Nick and Vanbever, Laurent},<br />
-                                           booktitle={Proceedings of the Symposium on SDN Research},<br />
-                                           pages={1--7},<br />
-                                           year={2017},<br />
-                                           organization={ACM}
-                                           }
-                                       </div>
-                                       <div id="sdx-correctness-sosr" class="abstract well">
-                                           Software-Defined Internet eXchange Points (SDXes) are recently
-                                           gaining momentum, with several SDXes now running
-                                           in production. The deployment of multiple SDXes on the Internet
-                                           raises the question of whether the interactions between
-                                           these SDXes will cause correctness problems, since SDX
-                                           policies can deflect traffic away from the default BGP route
-                                           for a prefix, effectively breaking the congruence between the
-                                           control plane and data plane. Although one deflection on a
-                                           path will never cause loops to occur, combining multiple deflections
-                                           at different SDXes can lead to persistent forwarding
-                                           loops that the control plane never sees.
-                                           In this paper, we introduce SIDR, a coordination framework
-                                           that enables SDXes to verify the end-to-end correctness (i.e.,
-                                           loop freedom) of an SDX policy. The challenge behind SIDR
-                                           is to strike a balance between privacy, scalability, and flexibility.
-                                           SIDR addresses these challenges by: (i) not requiring
-                                           SDXes to disclose the flow space their SDX policies act on,
-                                           only the next-hop they deflect to; and (ii) minimizing the number
-                                           of SDXes that must exchange state to detect correctness
-                                           problems. SIDR manages to preserve the flexibility of SDX
-                                           policies by activating the vast majority of the safe policies,
-                                           the policies that do not create a loop. We implemented SIDR
-                                           on the SDX platform and showed its practical effectiveness:
-                                           SIDR can activate 91% of all safe policies while preserving
-                                           privacy and scalability and can perform correctness checks in
-                                           about one second.
-                                       </div>
-                                   </td>
-                               </tr>
-
-                               <tr class="publish_row">
-                                   <td>
-                                       <br />
-                                       <span class="date">
-                                           2016<br>Nov
-                                            </span>
-                                   </td>
-                                   <td class="dropcontent_pub">
-                                       <em> Network Monitoring as a Streaming Analytics Problem </em><br />
-                                       <b>Arpit Gupta</b>, R&uuml;diger Birkner, Marco Canini, Nick Feamster, Chris Mac-Stoker, Walter Willinger<br />
-                                       <b>ACM HotNets</b>, Atlanta, GA
-                                       <br />
-                                       <span class="links btn-group pull-left">
-                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#sonata-hotnets16').slideToggle('fast');return false;">
-                                                  <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="pdfs/sonata-hotnets16.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/sonata_talk_basic.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
-                                                <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
-                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#sonata-hotnets16-bib').slideToggle('fast');
-                                                   return false;">
-                                                <i class="fa fa-chevron-down"></i> BibTex</a>
-                                            </span>
-                                       <br />
-                                       <div id="sonata-hotnets16-bib" class="abstract well">
-                                           @inproceedings{gupta2016network, <br/>
-                                           title={Network Monitoring as a Streaming Analytics Problem},<br/>
-                                           author={Gupta, Arpit and Birkner, R{\"u}diger and Canini, Marco and Feamster, Nick and Mac-Stoker, Chris and Willinger, Walter},<br/>
-                                           booktitle={Proceedings of the 15th ACM Workshop on Hot Topics in Networks},<br/>
-                                           pages={106--112},<br/>
-                                           year={2016},<br/>
-                                           organization={ACM}
-                                           }
-                                       </div>
-                                       <div id="sonata-hotnets16" class="abstract well">
-                                           Programmable switches make it easier to perform flexible
-                                           network monitoring queries at line rate, and scalable stream
-                                           processors make it possible to fuse data streams to answer
-                                           more sophisticated queries about the network in real-time.
-                                           Unfortunately, processing such network monitoring queries
-                                           at high traffic rates requires both the switches and the stream
-                                           processors to filter the traffic iteratively and adaptively so
-                                           as to extract only that traffic that is of interest to the query
-                                           at hand. Others have network monitoring in the context of
-                                           streaming; yet, previous work has not closed the loop in a way
-                                           that allows network operators to perform streaming analytics
-                                           for network monitoring applications at scale. To achieve
-                                           this objective, Sonata allows operators to express a network
-                                           monitoring query by considering each packet as a tuple and
-                                           efficiently partitioning each query between the switches and
-                                           the stream processor through iterative refinement. Sonata
-                                           extracts only the traffic that pertains to each query, ensuring
-                                           that the stream processor can scale traffic rates of several
-                                           terabits per second. We show with a simple example query
-                                           involving DNS reflection attacks and traffic traces from one
-                                           of the world's largest IXPs that Sonata can capture 95% of
-                                           all traffic pertaining to the query, while reducing the overall
-                                           data rate by a factor of about 400 and the number of required
-                                           counters by four orders of magnitude.
-                                       </div>
-                                   </td>
-                               </tr>
-
-                               <tr class="publish_row">
-                                   <td>
-                                       <br />
-                                       <span class="date">2016<br/>Mar</span>
-                                   </td>
-                                   <td class="dropcontent_pub">
-                                       <em> Authorizing Network Control at Software Defined Internet Exchange Points </em><br/>
-                                       <b>Arpit Gupta</b>, Nick Feamster, Laurent Vanbever<br />
-                                       <b>ACM SOSR</b>, Santa Clara, CA<br />
-                                       <span class="links btn-group pull-left">
-                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#flanc').slideToggle('fast');return false;">
-                                                  <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="pdfs/flanc.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/flanc-sosr_v4.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
-                                                <a href="" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
-                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#flanc-bib').slideToggle('fast');return false;">
-                                                <i class="fa fa-chevron-down"></i> BibTex</a>
-                                            </span>
-                                       <br />
-                                       <div id="flanc-bib" class="abstract well">
-                                           @inproceedings{gupta2016authorizing,<br />
-                                           title={Authorizing network control at software defined internet exchange points},<br />
-                                           author={Gupta, Arpit and Feamster, Nick and Vanbever, Laurent},<br />
-                                           booktitle={Proceedings of the Symposium on SDN Research},<br />
-                                           pages={16},<br />
-                                           year={2016},<br />
-                                           organization={ACM}
-                                           }
-                                       </div>
-                                       <div id="flanc" class="abstract well">
-                                           Software Defined Internet Exchange Points (SDXes) increase the
-                                           flexibility of interdomain traffic delivery on the Internet. Yet, an
-                                           SDX inherently requires multiple participants to have access to
-                                           a single, shared physical switch, which creates the need for an
-                                           authorization mechanism to mediate this access. In this paper, we
-                                           introduce a logic and mechanism called FLANC (A Formal Logic
-                                           for Authorizing Network Control), which authorizes each participant
-                                           to control forwarding actions on a shared switch and also
-                                           allows participants to delegate forwarding actions to other participants
-                                           at the switch (e.g., a trusted third party). FLANC extends
-                                           “says” and “speaks for” logic that have been previously designed for
-                                           operating system objects to handle expressions involving network
-                                           traffic flows. We describe FLANC, explain how participants can use
-                                           it to express authorization policies for realistic interdomain routing
-                                           settings, and demonstrate that it is efficient enough to operate in
-                                           operational settings.
-                                       </div>
-                                   </td>
-                               </tr>
-
-                               <tr class="publish_row">
-                                   <td>
-                                       <br />
-                                       <span class="date">2014<br>Mar</span>
-                                   </td>
-                                   <td class="dropcontent_pub">
-                                       <em>Peering at the Internet's Frontier: A First Look at ISP Interconnectivity in Africa</em><br />
-                                       <b>Arpit Gupta</b>, M. Calder, N. Feamster, M. Chetty, E. Calandro, E. Katz-Bassett<br />
-                                       <b>PAM</b>, Los Angeles, CA<br/>
-                                       <i class="fa fa-graduation-cap"></i> <em><b>50+</b> citations</em><br />
-                                       <span class="links btn-group pull-left">
-                                                <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#african_interconns').slideToggle('fast');return false;">
-                                                  <i class="fa fa-chevron-down"></i> abstract</a>
-                                                <a href="pdfs/african_interconns.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
-                                                <a href="slides/Africa-PAM14.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
-                                                <a href="https://github.com/agupta13/Peering-Africa" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                                <a href="" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                                   href="javascript:void(0);" onclick="$('#african_interconns-bib').slideToggle('fast');return false;">
-                                                <i class="fa fa-chevron-down"></i> BibTex</a>
-                                            </span>
-                                       <br />
-                                       <div id="african_interconns-bib" class="abstract well">
-                                           @inproceedings{gupta2014peering,<br/>
-                                           title={Peering at the Internet's Frontier: A First Look at ISP Interconnectivity in Africa.},<br/>
-                                           author={Gupta, Arpit and Calder, Matt and Feamster, Nick and Chetty, Marshini and Calandro, Enrico and Katz-Bassett, Ethan},<br/>
-                                           booktitle={PAM},<br/>
-                                           pages={204--213},<br/>
-                                           year={2014}
-                                           }
-                                       </div>
-                                       <div id="african_interconns" class="abstract well">
-                                           In developing regions, the performance to commonly visited destinations
-                                           is dominated by the network latency, which in turn depends on the connectivity
-                                           from ISPs in these regions to the locations that host popular sites and
-                                           content. We take a first look at ISP interconnectivity between various regions in
-                                           Africa and discover many circuitous Internet paths that should remain local often
-                                           detour through Europe. We investigate the causes of circuitous Internet paths and
-                                           evaluate the benefits of increased peering and better cache proxy placement for
-                                           reducing latency to popular Internet sites.
-                                       </div>
-                                   </td>
-                               </tr>
                            </table>
                             <!-- Primary content area end -->
                         </div>
@@ -812,40 +894,280 @@
                            <div class="contentarea">
                                <!-- Normal content area start -->
 
-                               <img src="images/profile.png" width="225px" height="240px" class="left" alt="Potrait" />
+                               <img src="images/profile.png" width="200px" height="220px" class="left" alt="Potrait" />
                                <div class="contentarea">
-                                   <p> I am a fifth-year Ph.D. student in
-                                       <a href="http://www.cs.princeton.edu/">Computer Science at Princeton University</a>
-                                       where I work with
-                                       <a href="https://www.cs.princeton.edu/~feamster/" ><b>Nick Feamster</b></a> and
-                                       <a href="https://www.cs.princeton.edu/~jrex/" ><b>Jennifer Rexford</b></a>.
-                                       Before joining Princeton, I completed my masters at <a href="https://www.csc.ncsu.edu/">NC State University</a>
-                                       and undergrad at <a href="https://www.iitr.ac.in/departments/ECE/">Indian Institute
-                                           of Technology, Roorkee</a>, India.
-
-
+                                   <p> I am currently an assistant professor
+                                       in computer science at
+                                       <a href="https://www.cs.ucsb.edu/"> <b> UC Santa Barbara</b></a>.
+                                       I received my Ph.D. in computer science from
+                                       <a href="http://www.cs.princeton.edu/">Princeton University</a>.
                                    </p>
-
                                    <p>
-                                       As a <b>systems</b> researcher, I design and build easy-to-use, scalable,
-                                       and deployable systems that solve real-world problems at the
-                                       intersection of <b>networking</b>, <b>cybersecurity</b>, and <b>data science</b>.
-
+                                       As a systems researcher, I design and build flexible, scalable,
+                                       and deployable systems that solve the real-world problems at the
+                                       intersection of <b>networking</b>, <b>security</b>, and <b>machine
+                                       learning</b>. Currently, my focus is
+                                       on making distributed network-telemetry
+                                       system scalable and robust to
+                                       traffic dynamics, and building
+                                       self-driving network-management
+                                       systems for access networks.
                                    </p>
-
-                                   <p>
-                                       I am in the <b>academic job market</b> this year.
-                                       My application material is <a href="http://www.cs.princeton.edu/~arpitg/application/"><b>here</b></a>.
-
-                                   </p>
-
-
-
-                                   <div class="contentarea" align="center">
-                                       <span id="encore-stats"></span>
+                                   <!--
+                                  <p>
+                                       <b>Note:</b> I am looking for self-motivated students to work with me at UCSB.
+                                      If you are interested in building next-generation intelligent network
+                                      monitoring and control systems, feel free to drop me an
+                                      <a href="mailto:arpitgupta@cs.ucsb.edu"> <b>email</b></a> with your CV.
 
 
-                                   </div>
+                                  </p>
+                                  -->
+
+                                  <div class="contentarea" align="left">
+
+                                  </div>
+
+                                  <div>
+                                      <p />
+                                      <div class="dropheader_pub" align="center">
+
+                                          <h2>Selected Publications</h2>
+                                      </div>
+                                      <p />
+                                  </div>
+                                  <table>
+                                      <tr class="publish_row">
+                                          <td>
+                                              <br />
+                                              <span class="date">2018<br>Aug</span>
+                                          </td>
+                                          <td class="dropcontent_pub">
+                                              <em> Flexible and Scalable Systems for Network Management </em><br />
+                                              <b>Arpit Gupta</b><br />
+                                              Ph.D. Thesis <br />
+                                              <i class="fa fa-trophy"></i> <em>Received honorable mention for <b>SIGCOMM Doctoral Dissertation Award</b> <br />
+                                              <span class="links btn-group pull-left">
+                                               <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                  href="javascript:void(0);" onclick="$('#thesis').slideToggle('fast');return false;">
+                                                 <i class="fa fa-chevron-down"></i> abstract</a>
+                                               <a href="/~arpitgupta/pdfs/thesis.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                               <a href="/~arpitgupta/slides/fpo_v4.pptx" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                           </span>
+                                              <br />
+                                              <div id="thesis" class="abstract well">
+                                                  <p>
+                                                      Our daily lives are heavily reliant upon Internet-connected devices,
+                                                      services, and applications. This reliance makes it more critical than
+                                                      ever that the underlying networks they depend on be reliable, performant,
+                                                      and secure. At the same time, the increasing complexity and diversity
+                                                      of today's devices, services, and applications have made network management
+                                                      tasks more complicated than ever. Modern network management mandates that
+                                                      operators can systematically monitor what is going on in their networks
+                                                      (network monitoring) and use this information to take real-time preventive
+                                                      or corrective actions (network control). Achieving these goals while also
+                                                      adhering to the limited compute and storage resources available on modern
+                                                      network devices poses significant challenges.
+                                                  </p>
+
+
+                                                  <p>
+                                                      The contribution of this dissertation is the design and implementation
+                                                      of two systems that enable flexible and scalable network monitoring and
+                                                      control. The network-monitoring system, Sonata, collects and analyzes
+                                                      network traffic to infer various network events in real time. The
+                                                      network-control system, SDX, enables fine-grained reactive control
+                                                      actions for interdomain traffic without disrupting the existing routing
+                                                      protocols. For each of these two systems, the dissertation focuses on
+                                                      (i) the abstractions that allow network operators to express
+                                                      flexible programs for both network monitoring and control;
+                                                      (ii) the algorithms that make the best use of limited compute
+                                                      and storage resources; and (iii) the systems that combine the
+                                                      high-level abstractions and the low-level algorithms and can be
+                                                      deployed in production settings.
+                                                  </p>
+
+                                                  <p>
+                                                      The lessons learned from this dissertation can help us develop
+                                                      next-generation network-management systems. More concretely,
+                                                      unlike existing systems that rely solely on a single device-type,
+                                                      this dissertation shows that designing systems that can pool resources
+                                                      from a heterogeneous set of devices (targets) is critical for building
+                                                      flexible and scalable network-management systems. It also demonstrates
+                                                      that as the networking technologies and protocols evolve rapidly with
+                                                      time, it is imperative to design modular systems that can swiftly
+                                                      catch up with these changes. Finally, this research also illustrates
+                                                      that it is crucial to select strategic locations (e.g., Internet
+                                                      exchange points) for deployment to drive innovations in Internet-wide
+                                                      traffic monitoring and control.
+                                                  </p>
+
+
+
+
+
+                                              </div>
+                                          </td>
+                                      </tr>
+
+
+                                      <tr class="publish_row">
+                                          <td>
+                                              <br />
+                                              <span class="date">2018<br>Aug</span>
+                                          </td>
+                                          <td class="dropcontent_pub">
+                                              <em> Sonata: Query-Driven Streaming Network Telemetry </em><br />
+                                              <b>Arpit Gupta</b>, Rob Harrison, Marco Canini, Nick Feamster, Jennifer Rexford, Walter Willinger<br />
+                                              <b>ACM SIGCOMM, </b> Budapest, Hungary<br />
+                                              <span class="links btn-group pull-left">
+                                               <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                  href="javascript:void(0);" onclick="$('#sonata-full').slideToggle('fast');return false;">
+                                                 <i class="fa fa-chevron-down"></i> abstract</a>
+                                               <a href="/~arpitgupta/pdfs/sonata.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                               <a href="/~arpitgupta/slides/sonata_sigcomm_v5.pptx" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                               <a href="https://github.com/Sonata-Princeton/SONATA-DEV" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                           </span>
+                                              <br />
+                                              <div id="sonata-full" class="abstract well">
+                                                  Managing and securing networks requires collecting and analyzing
+                                                  measurement data. Current technologies do not make it easy to do so,
+                                                  typically because they separate data collection (e.g., packet capture or
+                                                  flow monitoring) from the analysis, producing either too much data to
+                                                  answer a general question or too little data to answer a detailed
+                                                  question. This paper presents Sonata, a network telemetry system that
+                                                  exposes a query interface that directs the joint collection and analysis
+                                                  of network traffic. Sonata allows operators to directly express queries
+                                                  in a high-level language, partitions each query into a portion that runs
+                                                  on the switch and another that runs on the streaming analytics platform
+                                                  and refines the query to capture only the traffic that satisfies a query.
+                                                  Sonata allows operators to express real network monitoring tasks using
+                                                  dataflow operators, a compact, familiar programming idiom. Evaluation
+                                                  using traffic traces from a large ISP backbone show that Sonata's
+                                                  ability to compile portions of these queries to the data plane can
+                                                  reduce traffic rates at the stream processor by up to seven orders of
+                                                  magnitude.
+                                              </div>
+                                          </td>
+                                      </tr>
+
+
+                                      <tr class="publish_row">
+                                          <td>
+                                              <br />
+                                              <span class="date">
+                                               2016<br>Mar
+                                           </span>
+                                          </td>
+                                          <td class="dropcontent_pub">
+                                              <em> iSDX: An Industrial-Scale Software Defined Internet Exchange Point </em><br />
+                                              <b>Arpit Gupta</b>, Robert MacDavid, R&uuml;diger Birkner, Marco Canini,
+                                              Nick Feamster, Jennifer Rexford, Laurent Vanbever<br />
+                                              <b>USENIX NSDI</b>, Santa Clara, CA<br />
+                                              <i class="fa fa-trophy"></i> <em>Winner of <b>Community Award</b><br />
+                                              <i class="fa fa-trophy"></i> <em>  Selected in the <b>Best of the Rest</b> session at USENIX ATC, 2016</em> <br />
+                                              <em>Media Articles</em>: <a href="http://goo.gl/iYSyNY">CircleID</a>,
+                                              <a href="https://www.opennetworking.org/?p=2047&option=com_wordpress&amp;Itemid=316">ONF Blog</a>,
+                                              <a href="http://goo.gl/4ryMhO" >NewIP</a>
+                                          </em>
+                                              </em>
+
+                                              <br />
+                                              <span class="links btn-group pull-left">
+                                               <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                  href="javascript:void(0);" onclick="$('#isdx1').slideToggle('fast');return false;">
+                                                 <i class="fa fa-chevron-down"></i> abstract</a>
+                                               <a href="/~arpitgupta/pdfs/isdx.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                               <a href="/~arpitgupta/slides/iSDX-nsdi_v7.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                               <a href="https://github.com/sdn-ixp/iSDX" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                           </span>
+                                              <br />
+                                              <div id="isdx1" class="abstract well">
+                                                  Software-Defined Internet Exchange Points (SDXes)
+                                                  promise to significantly increase the flexibility and function
+                                                  of interdomain traffic delivery on the Internet. Unfortunately,
+                                                  current SDX designs cannot yet achieve the scale
+                                                  required for large Internet exchange points (IXPs), which
+                                                  can host hundreds of participants exchanging traffic for
+                                                  hundreds of thousands of prefixes. Existing platforms are
+                                                  indeed too slow and inefficient to operate at this scale, typically
+                                                  requiring minutes to compile policies and millions
+                                                  of forwarding rules in the data plane.
+                                                  We motivate, design, and implement iSDX, the first
+                                                  SDX architecture that can operate at the scale of the
+                                                  largest IXPs. We show that iSDX reduces both policy
+                                                  compilation time and forwarding table size by two orders
+                                                  of magnitude compared to current state-of-the-art SDX
+                                                  controllers. Our evaluation against a trace from one of the
+                                                  largest IXPs in the world found that iSDX can compile
+                                                  a realistic set of policies for 500 IXP participants in less
+                                                  than three seconds. Our public release of iSDX, complete
+                                                  with tutorials and documentation, is already spurring early
+                                                  adoption in operational networks.
+                                              </div>
+                                          </td>
+                                      </tr>
+
+                                      <tr class="publish_row">
+                                          <td>
+                                              <br />
+                                              <span class="date">
+                                               2014<br>Aug
+                                           </span>
+                                          </td>
+                                          <td class="dropcontent_pub">
+                                              <em> SDX: A Software Defined Internet Exchange </em>
+                                              <br />
+                                              <b>Arpit Gupta</b>, L. Vanbever, M. Shahbaz, S. Donovan, B. Schlinker,
+                                              N. Feamster, J. Rexford, S. Shenker, R. Clark, E. Katz-Bassett<br />
+                                              <b>ACM SIGCOMM, </b> Chicago, IL<br />
+                                              <i class="fa fa-graduation-cap"></i> <em><b>210+</b> citations, one of the highest for SIGCOMM 2014</em><br />
+                                              <span class="links btn-group pull-left">
+                                               <a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
+                                                  href="javascript:void(0);" onclick="$('#sdx1').slideToggle('fast');return false;">
+                                                 <i class="fa fa-chevron-down"></i> abstract</a>
+                                               <a href="/~arpitgupta/pdfs/sdx.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-text-o"></i> Paper</a>
+                                               <a href="/~arpitgupta/slides/sdx-sigcomm_v1.4.pdf" class="btn btn-default btn-xs"><i class="fa fa-file-powerpoint-o"></i> Talk</a>
+                                               <a href="https://github.com/sdn-ixp/sdx-pyretic" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+
+                                           </span>
+                                              <br />
+                                              <div id="sdx1" class="abstract well">
+                                                  BGP severely constrains how networks can deliver traffic over the
+                                                  Internet. Today's networks can only forward traffic based on the
+                                                  destination IP prefix, by selecting among routes offered by their
+                                                  immediate neighbors. We believe Software Defined Networking
+                                                  (SDN) could revolutionize wide-area traffic delivery, by offering
+                                                  direct control over packet-processing rules that match on multiple
+                                                  header fields and perform a variety of actions. Internet exchange
+                                                  points (IXPs) are a compelling place to start, given their central role
+                                                  in interconnecting many networks and their growing importance in
+                                                  bringing popular content closer to end users.
+                                                  To realize a Software Defined IXP (an SDX�), we must create
+                                                  compelling applications, such as <em>application-specific peering</em>,
+                                                  where two networks peer only for (say) streaming video traffic. We
+                                                  also need new programming abstractions that allow participating
+                                                  networks to create and run these applications and a runtime that
+                                                  both behaves correctly when interacting with BGP and ensures that
+                                                  applications do not interfere with each other. Finally, we must ensure
+                                                  that the system scales, both in rule-table size and computational
+                                                  overhead. In this paper, we tackle these challenges and demonstrate
+                                                  the flexibility and scalability of our solutions through controlled and
+                                                  in-the-wild experiments. Our experiments demonstrate that our SDX
+                                                  implementation can implement representative policies for hundreds
+                                                  of participants who advertise full routing tables while achieving
+                                                  sub-second convergence in response to configuration changes and
+                                                  routing updates.
+                                              </div>
+                                          </td>
+                                      </tr>
+
+                                  </table>
+
+                                  <!--<div class="contentarea" align="center">
+                                      <span id="encore-stats"></span>
+
+                                  </div>-->
 
                                    <!-- Normal content area end -->
                                </div>
@@ -896,7 +1218,15 @@
                         <div id="teaching"  style="display:none">
                             <!-- Primary content area start -->
                             <div class="post">
-                              <p>I have contributed to the following courses:</p>
+                                <p>At UCSB, I have taught the following courses:</p>
+                                <ul style="list-style-type:circle; margin-left:100px">
+                                    <li class="teaching_row"><a href="https://netai-ucsb.github.io/">CS 293N: ML For Networked Systems</a>, Winter 2020</li>
+                                    <li class="teaching_row"><a href="">CS 176C: Advanced Topics in Internet Computing</a>, Spring 2020</li>
+                                </ul>
+
+                                <p></p>
+
+                              <p>During my graduate studies, I contributed to the following courses:</p>
                                 <ul style="list-style-type:circle; margin-left:100px">
                                     <li class="teaching_row"><a href="https://github.com/Sonata-Princeton/SONATA-DEV/tree/tutorial/sonata/tutorials">Princeton COS 561 - Advanced Computer Networks</a>, Fall 2017</li>
                                     <li class="teaching_row"><a href="https://registrar.princeton.edu/course-offerings/course_details.xml?courseid=002132&term=1164">Princeton COS 598E - Securing Cyberspace with Big Data</a>, Spring 2016</li>
@@ -918,101 +1248,13 @@
                            <!-- Primary content area start -->
                            <div class="post">
 
-                               <h2 align="left">How can networks run themselves?</h2>
-                               <li class="publish_row">
-                                   <img src="images/self_driving_nw.jpg" width="300px" height="225px"
-                                        class="right" alt="Potrait" style="position: relative;float: left;margin: 0em 0em 0em 0em;">
+                               Please find more details about my current research <a href="https://snl.cs.ucsb.edu/research/self-driving-networks">here</a>.
 
                                <p>
+                               <p>
 
-                                   My dissertation research centers around answering this question. In particular,
-                                   to satisfy the increased security, availability, and performance requirements of
-                                   modern networks; my goal is to design and build <b>self-driving networks</b> that
-                                   automatically (without humans in the loop) make holistic (not protocol-specific)
-                                   control decisions in real time. To mitigate the effects of dynamic uncertainty,
-                                   self-driving networks need to <em>sense</em> (i.e., collect), <em>infer</em>
-                                   (i.e., analyze), and <em>actuate</em> (i.e., react to) different network events
-                                   by themselves; that is, they rely critically on closed-loop feedback. I have
-                                   designed and built two components that complete this feedback-loop:
-
-                               </p>
-
-                               <ul style="margin-left: 100px;">
-                                   <li><b>Telemetry</b> (with <a href="http://sonata.cs.princeton.edu" ><b>Sonata</b> </a>),
-                                       i.e., collecting and analysing the raw network data at scale to infer various
-                                       network activities of interest, such as DDoS attacks, or link failures,
-                                       etc. in real-time; and</li>
-                                   <li><b>Programmatic Control</b> (with <a href="http://sdx.cs.princeton.edu" > <b>SDX</b> </a>),
-                                       i.e., applying the reactive fine-grained
-                                       actions without disrupting network's default behavior, especially in multi-domain
-                                       settings such as Internet, or multi-tenant data center networks.</li>
-                               </ul>
-                               </li>
-
-                               <ul>
-
-                               <li class="publish_row">
-
-                                   <h4 align="left">Telemetry with Sonata</h4>
-
-                                   <span class="links btn-group pull-right">
-                                    <a href="https://github.com/Sonata-Princeton" class="btn-research btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                    <a href="http://sonata.cs.princeton.edu/" class="btn-research btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
-                                    <a href="publications/sonata.html" class="btn-research btn-default btn-xs"><i class="fa fa-graduation-cap"></i> Publications</a>
-                                    </span>
-                                   <br/><br />
-                                   <img src="images/sonata_overview.jpg" width="300px" height="225px" class="right"
-                                        alt="Potrait" style="position: relative;float: left;margin: 0em 0em 0em 0em;">                                   <p>
-                                       For networks to run themselves, they need to monitor a wide range of network
-                                       activities. For example, they need to concurrently detect whether the network is
-                                       under attack and also determine whether there is a device failure in the network.
-                                       This involves extracting multiple features from the traffic data and combining
-                                       them to infer activities of interest in real time. Most existing real-time
-                                       telemetry systems are either not expressive, i.e., they support an insufficient
-                                       set of telemetry tasks, or they are not scalable, i.e., they fail to scale as
-                                       the traffic volume intensifies and the number of telemetry tasks increases.
-                                       In contrast, self-driving networks require running multiple expressive telemetry
-                                       queries over high-volume networks. My research focuses on building a distributed
-                                       real-time network telemetry system that is both <em>expressive</em> and
-                                       <em>scalable</em>.
-
-                                   </p>
-                               </li>
-
-                               <li class="publish_row">
-
-                                   <h4 align="left">Programmatic Control with SDX</h4>
-
-                                   <span class="links btn-group pull-right">
-                                    <a href="https://github.com/sdn-ixp" class="btn-research btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
-                                    <a href="http://sdx.cs.princeton.edu/" class="btn-research btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
-                                    <a href="publications/sdx.html" class="btn-research btn-default btn-xs"><i class="fa fa-graduation-cap"></i> Publications</a>
-                                    </span>
-                                   <br />
-                                   <br/>
-                                   <img src="images/sdx_overview.jpg" width="300px" height="225px" class="right"
-                                        alt="Potrait" style="position: relative;float: left;margin: 0em 0em 0em 0em;">
-
-                                   <p>
-                                       After determining the reactive actions with telemetry, a self-driving network
-                                       needs to apply these fine-grained actions in the data plane, usually in
-                                       multi-domain settings. My research focuses on applying programmatic control
-                                       for the inter-domain networks settings, where by default networks use the
-                                       Border Gateway Protocol (BGP) to exchange traffic with each other. In my study,
-                                       I demonstrate that BGP is not suited for applying fine-grained control actions.
-                                       Ideally, one would like to replace BGP with a clean-slate solution supporting
-                                       programmatic control at scale. However, the existing Internet-wide deployment
-                                       of BGP-speaking routers makes such an approach impractical. Thus, the goal of
-                                       my research was to design and implement a dirty-slate solution that ensures
-                                       maximal impact with minimal deployment overhead while safely interoperating with
-                                       BGP.
-
-                                   </p>
-
-
-                               </li>
-                           </ul>
                            </div>
+
 
                        </div>
 
@@ -1031,19 +1273,31 @@
                             <div class="contact-title">
                                 Contact</div>
                             <ul class="fa-ul">
-                                <li><i class="fa-li fa fa-envelope"></i>arpitg@cs.princeton.edu</li></br>
+                                <li><i class="fa-li fa fa-envelope"></i>arpitgupta@cs.ucsb.edu</li></br>
                                 <li><i class="fa-li fa fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=lc3R9-wAAAAJ&hl=en&oi=ao">Google Scholar</a></li></br>
-                                <li><i class="fa-li fa fa-building"></i>320 Sherrerd Hall</li></br>
-                                <li><i class="fa-li fa fa-location-arrow"></i>Princeton, NJ, 08540 </li></br>
+                                <li><i class="fa-li fa fa-building"></i>1117
+                                    Harold Frank Hall
+                                </li></br>
+                                <li><i
+                                        class="fa-li fa fa-location-arrow"></i>Santa Barbara, CA</li></br>
                                 <li><i class="fa-li fa fa-github-alt"></i><a href="https://github.com/agupta13/">agupta13@github</a></li></br>
                             </ul>
                         </div>
                             <div class="contact">
                                 <div class="contact-title">News</div>
-                        <a class="twitter-timeline" href="https://twitter.com/glexqsd" data-widget-id="418590878039412737">Tweets by @glexqsd</a>
+                        <!--<a class="twitter-timeline" href="https://twitter.com/glexqsd" data-widget-id="418590878039412737">Tweets by @glexqsd</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                                </div>
+                           -->
+                                <a class="twitter-timeline" href="https://twitter.com/glexqsd?ref_src=twsrc%5Etfw" data-tweet-limit="4">Tweets by glexqsd</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </div>
+
+
+                        <!--
+                        <iframe height='160' width='355' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/11909057/activity-summary/4bc2a1431213922d77a28c99bcd415a9dbb19378'></iframe>
+
+                            </div>
+                            -->
+
                     </div>
 
                     <!-- Secondary content area end -->
@@ -1060,4 +1314,4 @@
 
         </body>
         </html>
-<script src="http://encore.noise.gatech.edu/task.js"></script>
+<!--<script src="http://encore.noise.gatech.edu/task.js"></script>-->

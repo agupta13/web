@@ -1,0 +1,128 @@
+<div class="post">
+
+    <h2 align="left">Making the 'Net' Work!</h2>
+    <p>
+    <p>
+
+        The proliferation of Internet-connected devices, services, and applications makes it
+        more critical than ever to make sure that the network they depend on is reliable,
+        performant, and secure. At the same time, their increasing complexity and diversity
+        have made even simple network management tasks, such as debugging performance or
+        detecting attacks, more complicated than ever. Modern network management needs to
+        provide operators with better ways to: (1) monitor what is going on in their networks;
+        (2) take real-time preventive or corrective actions based on this information,
+        to improve reliability, performance, and security of the networks and the services
+        that run on them. Achieving these goals given the limited compute and storage
+        resources available on modern network devices is challenging.
+
+        In my dissertation research, I developed two systems that address the challenges of
+        better information gathering, and more flexible control, respectively. They are:
+
+    </p>
+
+    <ul style="margin-left: 100px;">
+        <li><b>Network Monitoring</b> (with <a href="http://sonata.cs.princeton.edu" ><b>Sonata</b> </a>),
+            i.e., collecting and analysing the raw network data at scale to infer various
+            activities of interest, such as DDoS attacks, or link failures, etc. in real-time; and</li>
+        <li><b>Programmatic Control</b> (with <a href="http://sdx.cs.princeton.edu" > <b>SDX</b> </a>),
+            i.e., applying the reactive fine-grained reactive control actions without
+            disrupting Internet's routing protocols.</li>
+    </ul>
+    <p></p>
+    <p>
+        In both cases, my research focuses on:
+        (1) the abstractions that allow operators to express flexible programs for monitoring and control;
+        (2) the algorithms and data structures that make the best use of limited compute and storage resources;
+        and (3) the systems that glue high-level abstractions to the low-level algorithms.
+    </p>
+    </li>
+
+    <ul>
+
+        <li class="publish_row">
+
+            <h4 align="left">Network Monitoring with Sonata</h4>
+            <span class="links btn-group pull-right">
+                                    <a href="https://github.com/Sonata-Princeton" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                    <a href="http://sonata.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                    <a href="publications/sonata.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> Publications</a>
+                                    </span>
+            <br />
+            <img src="images/sonata_overview.jpg" width="300px" height="225px" class="right" alt="Potrait" style="position: relative;float: right;margin: 0em 0em 0em 0em;">                                   <p>
+            To keep the networks running, network operators need to monitor a wide range of network
+            activities. For example, they need to concurrently detect whether the network is
+            under attack and also determine whether there is a device failure in the network.
+            This involves extracting multiple features from the traffic data and combining
+            them to infer activities of interest in real time. Most existing network monitoring
+            systems are either not expressive, i.e., they support an insufficient
+            set of monitoring tasks, or they are not scalable, i.e., they fail to scale as
+            the traffic volume intensifies and the number of telemetry tasks increases.
+            In contrast, to make the 'net' work, network operators require running multiple
+            flexible monitoring queries over high-volume networks. My research focuses on
+            building a distributed real-time network monitoring system that is both
+            <em>flexible</em> and <em>scalable</em>.
+
+        </p>
+        </li>
+
+        <li class="publish_row">
+
+            <h4 align="left">Programmatic Control with SDX</h4>
+            <span class="links btn-group pull-right">
+                                    <a href="https://github.com/sdn-ixp" class="btn btn-default btn-xs"><i class="fa fa-code"></i> Code</a>
+                                    <a href="http://sdx.cs.princeton.edu/" class="btn btn-default btn-xs"><i class="fa fa-globe"></i> Web</a>
+                                    <a href="publications/sdx.html" class="btn btn-default btn-xs"><i class="fa fa-graduation-cap"></i> Publications</a>
+                                    </span>
+            <br />
+            <img src="images/sdx_overview.jpg" width="300px" height="225px" class="right" alt="Potrait" style="position: relative;float: right;margin: 0em 0em 0em 0em;">                                   <p>
+
+            <p>
+                After determining what events are going on in the network, network operators
+                needs to apply reactive fine-grained control actions. My research focuses on
+                applying programmatic control for the inter-domain networks settings, where by
+                default networks use the Border Gateway Protocol (BGP) to exchange traffic with
+                each other. In my study, I demonstrate that BGP is not suited for applying
+                fine-grained control actions. Ideally, one would like to replace BGP with a
+                clean-slate solution enabling network-wide programmatic control. However, the
+                existing Internet-wide deployment of BGP-speaking routers makes such an approach
+                impractical. Thus, the goal of my research was to design and implement an
+                incrementally deployable solution that ensures maximal impact with minimal
+                deployment overhead while safely interoperating with BGP.
+            </p>
+
+            <p>
+                SDX has been a major
+                <a href="https://www.opennetworking.org/news-and-events/blog/code-drop-isdx-project-2/">
+                    <b>open-source</b></a>
+                software project with the Open Networking Foundation (ONF) since March 2016.
+                The project website provides instructions for network operators to use software
+                with both virtual and physical switches. It has been used by operators at large
+                IXPs, such as <a href="https://github.com/h2020-endeavour/endeavour">
+                <b>DE-CIX</b></a> and
+                <a href="http://www.delaat.net/rp/2015-2016/p26/report.pdf">
+                    <b>AMS-IX</b></a>;
+                and is the de-facto SDX platform used by researchers affiliated with the Endeavour
+                (Europe) and IX.BR (Brazil) projects. It was also used by developers, working
+                on a project replacing conventional exchange, connecting multiple government
+                agencies, with a software-defined exchange.  The software system has also been
+                shipped with a commercial product,
+                <a href="https://finance.yahoo.com/news/cloudrouter-3-0-release-100-100100424.html">
+                    <b>CloudRouter</b></a>.
+                iSDX was also the basis for a programming assignment used by tens of thousands of
+                students enrolled for the <a href="https://www.coursera.org/learn/sdn"> <b>SDN
+                Coursera course</b></a> in 2016. For these efforts, the project won the
+                <a href=""> <b>Internet2 Internet Innovation Award</b></a>,
+                <a href="https://www.usenix.org/node/196279"> <b>Community Award </b></a>
+                at USENIX NSDI 2016, and <a href=""> <b>Best Paper Award </b></a>
+                at ACM SOSR 2017. The National Science Foundation hosted
+                a <a href="https://www.nitrd.gov/nitrdgroups/images/7/77/SDX_Workshop_Outbrief.pdf">
+                <b>workshop</b></a> and created a
+                <a href="https://www.nsf.gov/pubs/2014/nsf14554/nsf14554.htm">
+                    <b>$25M research program</b></a> based on the concepts initially developed
+                as part of the SDX project.
+            </p>
+
+
+        </li>
+    </ul>
+</div>
